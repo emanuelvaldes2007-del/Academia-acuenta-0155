@@ -71,7 +71,7 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 2: Reglas Cardinales de Servicio y Convivencia",
-                contenido: `<p>En Walmart y SuperBodega aCuenta guiamos nuestro actuar diario bajo tres reglas de oro y cultura tradicional:</p><br><ul><li><strong>La Regla de Oro:</strong> <em>"Trata a los demás como te gustaría ser tratado."</em></li><li><strong>La Regla de Platino:</strong> <em>"Trata a los demás como ELLOS quieren ser tratados."</em></li><li><strong>La Regla de la Puesta del Sol (Sundown Rule):</strong> <em>"Responder a las solicitudes, requerimientos o problemas el mismo día en que son recibidos."</em></li></ul>`
+                contenido: `<p>En Walmart y SuperBodega aCuenta guiamos nuestro actuar diario bajo las reglas cardinales de servicio al cliente y convivencia:</p><br><ul><li><strong>La Regla de Oro:</strong> <ol style="margin-left: 1.2rem; margin-top: 0.3rem;"><li>El cliente siempre tiene la razón.</li><li>Y, si no la tiene, remítase al punto anterior.</li></ol></li><br><li><strong>La Regla de los 3 Metros:</strong> <em>"Si un cliente se encuentra a menos de 3 metros de distancia, debes mirarlo a los ojos, sonreírle y saludarlo amablemente ofreciéndole tu ayuda."</em></li><br><li><strong>La Regla de Platino:</strong> <em>"Trata a los demás como ELLOS quieren ser tratados."</em></li><br><li><strong>La Regla de la Puesta del Sol (Sundown Rule):</strong> <em>"Responder a las solicitudes, requerimientos o problemas el mismo día en que son recibidos."</em></li></ul>`
             },
             {
                 subtitulo: "Etapa 3: Seguridad Operacional y Resguardo de Vías",
@@ -85,8 +85,8 @@ const modulosData = {
                 correcta: 1
             },
             {
-                enunciado: "¿Cuál es la diferencia fundamental entre la 'Regla de Oro' y la 'Regla de Platino'?",
-                opciones: ["Tratan sobre el orden de la bodega.", "La de Oro es tratarlos como nos gustaría ser tratados, y la de Platino como ELLOS desean ser tratados.", "Aplica solo para supervisores.", "Son exactamente iguales."],
+                enunciado: "¿En qué consiste la 'Regla de los 3 Metros' en la atención al cliente?",
+                opciones: ["Mantener una distancia de 3 metros de los clientes en todo momento.", "Si un cliente está a menos de 3 metros, mirarlo a los ojos, sonreír, saludar y ofrecerle ayuda.", "Solo aplica para atender a clientes que lleven más de 3 carros de compra.", "Delimitar una zona de seguridad alrededor de las máquinas apiladoras."],
                 correcta: 1
             },
             {
@@ -251,7 +251,7 @@ const modulosData = {
             },
             {
                 enunciado: "Al empacar o embolsar los productos del cliente en caja, ¿qué precaución principal debes tener?",
-                opciones: ["Empacar productos de limpieza y detergentes junto con productos frescos y carnes.", "Separar estrictamente los productos químicos y de limpieza de los alimentos para evitar contaminación.", "Mezclar todo en una sola bolsa para ahorrar bolsas plásticas.", "Dejar los productos frágiles al fondo de la bolsa y las latas pesadas arriba."],
+                opciones: ["Empacar productos de limpieza y detergentes junto con productos frescos y carnes.", "Separar strictly los productos químicos y de limpieza de los alimentos para evitar contaminación.", "Mezclar todo en una sola bolsa para ahorrar bolsas plásticas.", "Dejar los productos frágiles al fondo de la bolsa y las latas pesadas arriba."],
                 correcta: 1
             },
             {
@@ -284,7 +284,7 @@ const modulosData = {
                 correcta: 1
             },
             {
-                enunciado: "Al momento de empacar un pedido con productos secos, yogures (fríos) y helados (congelados), ¿cómo se deben almacenar?",
+                enunciado: "Al moment de empacar un pedido con productos secos, yogures (fríos) y helados (congelados), ¿cómo se deben almacenar?",
                 opciones: ["Guardar todo en una misma bolsa grande y dejarla en la góndola de secos.", "Separar en bolsas, rotular con el nombre del cliente y poner secos en góndola, y fríos/congelados en sus respectivos coolers.", "Dejar las bolsas de helados sobre la mesa de la sala Pick Up hasta que llegue el cliente.", "Empacar solo los secos y dejar los fríos sin bolsa dentro del congelador."],
                 correcta: 1
             },
