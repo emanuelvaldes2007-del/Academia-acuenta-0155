@@ -101,7 +101,7 @@ const modulosData = {
             },
             {
                 enunciado: "¿Por qué es obligatorio el uso de Zapatos de Seguridad?",
-                opciones: ["Es un requisito estético.", "Para prevenir accidentes laborales como aplastamientos de pies.", "Solo porque lo exige el prevencionista.", "Para no ensuciar la ropa."],
+                opciones: ["Es un requisito estético.", "Para prevenir accidentes laborales como aplastamientos de pies o cortes.", "Solo porque lo exige el prevencionista.", "Para no ensuciar la ropa."],
                 correcta: 1
             }
         ]
@@ -186,7 +186,7 @@ const modulosData = {
         etapas: [
             {
                 subtitulo: "Etapa 1: Orígenes y Tipos de Mermas",
-                contenido: `<p>La merma es la pérdida no planificada de inventario. Afecta los resultados económicos de SuperBodega aCuenta y el inventario disponible en sistema.</p><br><p><strong>Causas principales de merma operativa:</strong></p><ul><li>Mala manipulación de apiladores y traspaletas (cajas caídas o aplastadas).</li><li>Falta de rotación FIFO (vencimiento de productos).</li><li>Empaques dañados por fraccionamiento o aperturas no autorizadas.</li></ul>`
+                contenido: `<p>La merma es la pérdida no planificada de inventario. Afecta los resultados económicos de SuperBodega aCuenta y el inventario disponible en sistema.</p><br><p><strong>Causas principales de merma operativa:</strong></p><ul><li>Mala manipulación de traspaletas (cajas caídas o aplastadas).</li><li>Falta de rotación FIFO (vencimiento de productos).</li><li>Empaques dañados por fraccionamiento o aperturas no autorizadas.</li></ul>`
             },
             {
                 subtitulo: "Etapa 2: Procedimiento de Retiro y Registro",
@@ -384,19 +384,21 @@ function renderizarEvaluacion() {
             <div class="seccion-pantalla-modulo">
                 <span class="badge-modulo">Evaluación Módulo ${moduloActualId}</span>
                 <h2 style="margin: 0.5rem 0; color: var(--color-primario);">Cuestionario de Conocimiento</h2>
-                <p style="color: #666; margin-bottom: 1.5rem;">Responde las siguientes preguntas para aprobar el módulo:</p>
+                <p style="color: #666; margin-bottom: 1.5rem;">Responde las siguientes preguntas seleccionando la alternativa correcta:</p>
                 <form id="form-evaluacion" onsubmit="enviarEvaluacion(event)">
     `;
 
+    const letras = ['A', 'B', 'C', 'D', 'E', 'F'];
+
     mod.preguntas.forEach((p, idx) => {
         html += `<div style="background: #F8FAFC; padding: 1.25rem; border-radius: 8px; margin-bottom: 1.25rem; border: 1px solid #E2E8F0;">
-            <p style="font-weight: 600; margin-bottom: 0.8rem;">${idx + 1}. ${p.enunciado}</p>`;
-       p.opciones.forEach((op, optIdx) => {
-            const letras = ['A', 'B', 'C', 'D'];
-            const letraActual = letras[optIdx] || optIdx;
-            html += `<label style="display: block; margin-bottom: 0.5rem; font-size: 0.95rem; cursor: pointer;">
-                <input type="radio" name="p_${idx}" value="${letraActual}" required style="margin-right: 8px;">
-                ${letraActual}) ${op}
+            <p style="font-weight: 600; margin-bottom: 0.8rem; color: #1E293B;">${idx + 1}. ${p.enunciado}</p>`;
+        
+        p.opciones.forEach((op, optIdx) => {
+            const letra = letras[optIdx] || (optIdx + 1);
+            html += `<label style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 0.6rem; font-size: 0.95rem; cursor: pointer; color: #334155;">
+                <input type="radio" name="p_${idx}" value="${optIdx}" required style="margin-top: 3px; cursor: pointer;"> 
+                <span><strong>${letra})</strong> ${op}</span>
             </label>`;
         });
         html += `</div>`;
