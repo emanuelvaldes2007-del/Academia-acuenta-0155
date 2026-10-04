@@ -75,7 +75,7 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 3: Seguridad Operacional y Resguardo de Vías",
-                contenido: `<p><strong>Norma Crítica de Prevención de Riesgos:</strong></p><div class="alerta-seguridad" style="background: #fce8e6; border-left: 4px solid #d00018; padding: 1rem; margin: 1rem 0; border-radius: 4px;"><strong>Pasillos Despejados:</strong> Jamás debes dejar transpaletas (yeguas), pallets vacíos o cajas acumuladas bloqueando las vías de tránsito.</div><br><p><strong>Uso de Elementos de Protección Personal (EPP):</strong> Utiliza siempre tus zapatos de seguridad y guantes de cabritilla.</p>`
+                contenido: `<p><strong>Norma Crítica de Prevención de Riesgos:</strong></p><div class="alerta-seguridad" style="background: #fce8e6; border-left: 4px solid #d00018; padding: 1rem; margin: 1rem 0; border-radius: 4px;"><strong>Pasillos Despejados:</strong> Jamás debes dejar transpaletas, pallets vacíos o cajas acumuladas bloqueando las vías de tránsito.</div><br><p><strong>Uso de Elementos de Protección Personal (EPP):</strong> Utiliza siempre tus zapatos de seguridad y guantes de cabritilla.</p>`
             }
         ],
         preguntas: [
@@ -186,7 +186,7 @@ const modulosData = {
         etapas: [
             {
                 subtitulo: "Etapa 1: Orígenes y Tipos de Mermas",
-                contenido: `<p>La merma es la pérdida no planificada de inventario. Afecta los resultados económicos de SuperBodega aCuenta y el inventario disponible en sistema.</p><br><p><strong>Causas principales de merma operativa:</strong></p><ul><li>Mala manipulación de apiladores y yeguas (cajas caídas o aplastadas).</li><li>Falta de rotación FIFO (vencimiento de productos).</li><li>Empaques dañados por fraccionamiento o aperturas no autorizadas.</li></ul>`
+                contenido: `<p>La merma es la pérdida no planificada de inventario. Afecta los resultados económicos de SuperBodega aCuenta y el inventario disponible en sistema.</p><br><p><strong>Causas principales de merma operativa:</strong></p><ul><li>Mala manipulación de apiladores y traspaletas (cajas caídas o aplastadas).</li><li>Falta de rotación FIFO (vencimiento de productos).</li><li>Empaques dañados por fraccionamiento o aperturas no autorizadas.</li></ul>`
             },
             {
                 subtitulo: "Etapa 2: Procedimiento de Retiro y Registro",
@@ -201,7 +201,7 @@ const modulosData = {
             },
             {
                 enunciado: "¿Por qué es obligatorio registrar en sistema la mercadería dañada antes de procesarla o desecharla?",
-                opciones: ["Para que el sistema descuente la unidad del inventario real y solicite reabastecimiento.", "Para cobrarle el valor del producto al repartidor de la central.", "No es obligatorio, solo se hace si el encargado tiene tiempo.", "Para regalar el producto dañado a los clientes."],
+                opciones: ["Para que el sistema descuente la unidad del inventario real y solicite reabastecimiento.", "Para cobrarle el valor del producto al repartidor de la central.", "No es obligatorio, solo se  si el encargado tiene tiempo.", "Para regalar el producto dañado a los clientes."],
                 correcta: 0
             },
             {
@@ -258,7 +258,7 @@ const modulosData = {
                 enunciado: "Dentro del método M.I.T. para la revisión de billetes, ¿qué elemento en específico se busca al aplicar el paso 'INCLINAR'?",
                 opciones: ["La firma del presidente del Banco Central.", "El cambio de color en la tinta de variabilidad óptica o el movimiento del efecto en la franja 3D.", "La aspereza del papel en el número impreso.", "La marca de agua a contraluz."],
                 correcta: 1
-            }
+            }hace
         ]
     },
     5: {
