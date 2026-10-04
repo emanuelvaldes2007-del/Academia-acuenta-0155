@@ -75,7 +75,7 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 3: Seguridad Operacional y Resguardo de Vías",
-                contenido: `<p><strong>Norma Crítica de Prevención de Riesgos:</strong></p><div class="alerta-seguridad" style="background: #fce8e6; border-left: 4px solid #d00018; padding: 1rem; margin: 1rem 0; border-radius: 4px;"><strong>Pasillos Despejados:</strong> Jamás debes dejar traspaletas, pallets vacíos o cajas acumuladas bloqueando las vías de tránsito.</div><br><p><strong>Uso de Elementos de Protección Personal (EPP):</strong> Utiliza siempre tus zapatos de seguridad y guantes de cabritilla.</p>`
+                contenido: `<p><strong>Norma Crítica de Prevención de Riesgos:</strong></p><div class="alerta-seguridad" style="background: #fce8e6; border-left: 4px solid #d00018; padding: 1rem; margin: 1rem 0; border-radius: 4px;"><strong>Pasillos Despejados:</strong> Jamás debes dejar traspaletas, pallets vacíos o cajas acumuladas bloqueando las vías de tránsito.</div><br><p><strong>Uso de Elementos de Protección Personal (EPP):</strong> Utiliza siempre tus zapatos de seguridad.</p>`
             }
         ],
         preguntas: [
@@ -201,7 +201,7 @@ const modulosData = {
             },
             {
                 enunciado: "¿Por qué es obligatorio registrar en sistema la mercadería dañada antes de procesarla o desecharla?",
-                opciones: ["Para que el sistema descuente la unidad del inventario real y solicite reabastecimiento.", "Para cobrarle el valor del producto al repartidor de la central.", "No es obligatorio, solo se  si el encargado tiene tiempo.", "Para regalar el producto dañado a los clientes."],
+                opciones: ["Para que el sistema descuente la unidad del inventario real y solicite reabastecimiento.", "Para cobrarle el valor del producto al repartidor de la central.", "No es obligatorio, solo se hace si el encargado tiene tiempo.", "Para regalar el producto dañado a los clientes."],
                 correcta: 0
             },
             {
@@ -258,7 +258,7 @@ const modulosData = {
                 enunciado: "Dentro del método M.I.T. para la revisión de billetes, ¿qué elemento en específico se busca al aplicar el paso 'INCLINAR'?",
                 opciones: ["La firma del presidente del Banco Central.", "El cambio de color en la tinta de variabilidad óptica o el movimiento del efecto en la franja 3D.", "La aspereza del papel en el número impreso.", "La marca de agua a contraluz."],
                 correcta: 1
-            }hace
+            }
         ]
     },
     5: {
@@ -384,21 +384,16 @@ function renderizarEvaluacion() {
             <div class="seccion-pantalla-modulo">
                 <span class="badge-modulo">Evaluación Módulo ${moduloActualId}</span>
                 <h2 style="margin: 0.5rem 0; color: var(--color-primario);">Cuestionario de Conocimiento</h2>
-                <p style="color: #666; margin-bottom: 1.5rem;">Responde las siguientes preguntas seleccionando la alternativa correcta:</p>
+                <p style="color: #666; margin-bottom: 1.5rem;">Responde las siguientes preguntas para aprobar el módulo:</p>
                 <form id="form-evaluacion" onsubmit="enviarEvaluacion(event)">
     `;
 
-    const letras = ['A', 'B', 'C', 'D', 'E', 'F'];
-
     mod.preguntas.forEach((p, idx) => {
         html += `<div style="background: #F8FAFC; padding: 1.25rem; border-radius: 8px; margin-bottom: 1.25rem; border: 1px solid #E2E8F0;">
-            <p style="font-weight: 600; margin-bottom: 0.8rem; color: #1E293B;">${idx + 1}. ${p.enunciado}</p>`;
-        
+            <p style="font-weight: 600; margin-bottom: 0.8rem;">${idx + 1}. ${p.enunciado}</p>`;
         p.opciones.forEach((op, optIdx) => {
-            const letra = letras[optIdx] || (optIdx + 1);
-            html += `<label style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 0.6rem; font-size: 0.95rem; cursor: pointer; color: #334155;">
-                <input type="radio" name="p_${idx}" value="${optIdx}" required style="margin-top: 3px; cursor: pointer;"> 
-                <span><strong>${letra})</strong> ${op}</span>
+            html += `<label style="display: block; margin-bottom: 0.5rem; font-size: 0.95rem; cursor: pointer;">
+                <input type="radio" name="p_${idx}" value="${optIdx}" required style="margin-right: 8px;"> ${op}
             </label>`;
         });
         html += `</div>`;
