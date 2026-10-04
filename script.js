@@ -75,7 +75,7 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 3: Seguridad Operacional y Resguardo de Vías",
-                contenido: `<p><strong>Norma Crítica de Prevención de Riesgos:</strong></p><div class="alerta-seguridad" style="background: #fce8e6; border-left: 4px solid #d00018; padding: 1rem; margin: 1rem 0; border-radius: 4px;"><strong>Pasillos Despejados:</strong> Jamás debes dejar transpaletas, pallets vacíos o cajas acumuladas bloqueando las vías de tránsito.</div><br><p><strong>Uso de Elementos de Protección Personal (EPP):</strong> Utiliza siempre tus zapatos de seguridad y guantes de cabritilla.</p>`
+                contenido: `<p><strong>Norma Crítica de Prevención de Riesgos:</strong></p><div class="alerta-seguridad" style="background: #fce8e6; border-left: 4px solid #d00018; padding: 1rem; margin: 1rem 0; border-radius: 4px;"><strong>Pasillos Despejados:</strong> Jamás debes dejar traspaletas, pallets vacíos o cajas acumuladas bloqueando las vías de tránsito.</div><br><p><strong>Uso de Elementos de Protección Personal (EPP):</strong> Utiliza siempre tus zapatos de seguridad y guantes de cabritilla.</p>`
             }
         ],
         preguntas: [
