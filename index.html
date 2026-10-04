@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación y Formación - SuperBodega aCuenta</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Estilos base incrustados para garantizar que el diseño cargue siempre -->
+    <style>
+        :root {
+            --color-primario: #0071ce;
+            --color-secundario: #d00018;
+            --color-fondo: #f4f6f8;
+            --color-texto: #333333;
+            --color-blanco: #ffffff;
+            --color-exito: #137333;
+            --color-pendiente: #b06000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        /* REGISTRO / LOGIN */
+        .contenedor-inicio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .tarjeta-login {
+            background: var(--color-blanco);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .icono-granja {
+            font-size: 2.5rem;
+        }
+
+        .campo-input {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+
+        .campo-input label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .campo-input input {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        /* BOTONES */
+        .btn-acuenta {
+            background-color: var(--color-secundario);
+            color: var(--color-blanco);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-acuenta:hover {
+            background-color: #a80013;
+        }
+
+        .btn-bloque {
+            width: 100%;
+        }
+
+        .btn-grande {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn-secundario-sm, .btn-admin-sm {
+            background: #e4e6eb;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .btn-admin-sm {
+            background: #0071ce;
+            color: white;
+        }
+
+        /* ENCABEZADO */
+        .encabezado-app {
+            background-color: var(--color-blanco);
+            border-bottom: 3px solid var(--color-secundario);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .contenido-encabezado {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .marca-tienda {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icono-granja-sm {
+            font-size: 2rem;
+        }
+
+        .subtitulo-app {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .perfil-usuario {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .contenedor-principal {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .tarjeta-progreso-global {
+            background: var(--color-blanco);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .info-progreso {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contenedor-barra {
+            background: #e0e0e0;
+            height: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .barra-relleno {
+            background: var(--color-exito);
+            height: 100%;
+            transition: width 0.4s ease;
+        }
+
+        /* GRILLA MÓDULOS */
+        .grilla-modulos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tarjeta-modulo {
+            background: var(--color-blanco);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-top: 4px solid var(--color-primario);
+        }
+
+        .tarjeta-modulo:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .tarjeta-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .badge-modulo {
+            background: #e8f0fe;
+            color: var(--color-primario);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .badge-estado {
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .badge-estado.pendiente {
+            background: #fef7e0;
+            color: #b06000;
+        }
+
+        .badge-estado.completado {
+            background: #e6f4ea;
+            color: var(--color-exito);
+        }
+
+        .tarjeta-modulo h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        .tarjeta-modulo p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        /* VISTA MÓDULOS */
+        .contenedor-pantalla-nueva {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .barra-navegacion-modulo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-volver-menu {
+            background: #e4e6eb;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .seccion-pantalla-modulo {
+            background: var(--color-blanco);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        /* MODAL ADMIN */
+        .modal-superposicion {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .contenido-modal {
+            background: white;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .cabecera-modal {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-cerrar-modal {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .tabla-admin {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .tabla-admin th, .tabla-admin td {
+            border: 1px solid #ddd;
+            padding: 0.6rem;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .tabla-admin th {
+            background: #f4f6f8;
+        }
+
+        .btn-peligro {
+            background: var(--color-secundario);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VISTA 1: REGISTRO DE COLABORADOR -->
+    <div id="vista-registro" class="contenedor-inicio">
+        <div class="tarjeta-login">
+            <div class="logo-contenedor">
+                <span class="icono-granja">🐔</span>
+                <h1>SuperBodega aCuenta</h1>
+            </div>
+            <h2>Plataforma de Capacitación Operacional</h2>
+            <p>Ingresa tu nombre para iniciar tus módulos de formación y evaluación.</p>
+            
+            <form onsubmit="registrarUsuario(event)">
+                <div class="campo-input">
+                    <label for="nombre-colaborador">Nombre Completo del Colaborador:</label>
+                    <input type="text" id="nombre-colaborador" placeholder="Ej: Juan Pérez" required autocomplete="off">
+                </div>
+                <button type="submit" class="btn-acuenta btn-bloque">Comenzar Capacitación ➔</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- VISTA 2: MENÚ PRINCIPAL DE MÓDULOS -->
+    <div id="vista-menu" style="display: none;">
+        <header class="encabezado-app">
+            <div class="contenido-encabezado">
+                <div class="marca-tienda">
+                    <!-- Imagen de logo en lugar del ícono de emoji -->
+                    <img src="logo.png" alt="Logo SuperBodega aCuenta" style="height: 45px; width: auto; object-fit: contain;">
+                    <div>
+                        <h2>SuperBodega aCuenta</h2>
+                        <span class="subtitulo-app">Módulos de Entrenamiento Interno</span>
+                    </div>
+                </div>
+                <div class="perfil-usuario">
+                    <span class="saludo-usuario">Hola, <strong id="nombre-usuario-display">Colaborador</strong></span>
+                    <button class="btn-secundario-sm" onclick="cambiarUsuario()">Cambiar Usuario</button>
+                    <button class="btn-admin-sm" onclick="mostrarModalAdmin()">⚙️ Panel Admin</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="contenedor-principal">
+            <!-- BARRA DE PROGRESO GLOBAL -->
+            <section class="tarjeta-progreso-global">
+                <div class="info-progreso">
+                    <h3>Tu Progreso General</h3>
+                    <span id="texto-progreso">0 de 6 Módulos completados (0%)</span>
+                </div>
+                <div class="contenedor-barra">
+                    <div id="barra-progreso" class="barra-relleno" style="width: 0%;"></div>
+                </div>
+            </section>
+
+            <!-- GRILLA DE MÓDULOS -->
+            <section class="grilla-modulos">
+                <!-- MÓDULO 1 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(1)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 1</span>
+                        <span id="badge-1" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>CULTURA Y VALORES WALMART</h3>
+                    <p>Principios institucionales, Reglas Cardinales, la Regla de la Puesta del Sol y prevención de riesgos en sala.</p>
+                </div>
+
+                <!-- MÓDULO 2 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(2)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 2</span>
+                        <span id="badge-2" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>📊 NSG Y CRITERIO FIFO</h3>
+                    <p>Meta del Nivel de Servicio en Góndola (96,5%), prevención de quiebres visuales y orden por vencimiento.</p>
+                </div>
+
+                <!-- MÓDULO 3 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(3)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 3</span>
+                        <span id="badge-3" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>📦 PREVENCIÓN DE MERMAS</h3>
+                    <p>Origen de mermas operativas, manipulación segura y procedimiento de registro en sistema antes del retiro.</p>
+                </div>
+
+                <!-- MÓDULO 4 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(4)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 4</span>
+                        <span id="badge-4" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>💳 OPERACIÓN DE CAJAS</h3>
+                    <p>Estándares de servicio al cliente, escaneo preciso, revisión de carros y verificación de billetes con el método M.I.T.</p>
+                </div>
+
+                <!-- MÓDULO 5 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(5)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 5</span>
+                        <span id="badge-5" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>🛒 PEDIDOS PICK UP</h3>
+                    <p>Omnicanalidad, recolección en sala, protocolo de quiebres, empaque por temperatura y Control Tower Instaleap.</p>
+                </div>
+
+                <!-- MÓDULO 6 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(6)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 6</span>
+                        <span id="badge-6" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>📱 AJUSTE SMART</h3>
+                    <p>Aprende la importancia del ajuste correcto de inventario para asegurar el reabastecimiento y cuidar el NSG.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- VISTA 3: CONTENEDOR DINÁMICO DE MÓDULOS -->
+    <div id="vista-modulo-pagina" style="display: none;"></div>
+
+    <!-- MODAL PANEL DE ADMINISTRADOR -->
+    <div id="modal-admin" class="modal-superposicion" style="display: none;">
+        <div class="contenido-modal">
+            <div class="cabecera-modal">
+                <h3>⚙️ Panel de Administración y Registros</h3>
+                <button class="btn-cerrar-modal" onclick="cerrarModalAdmin()">✖</button>
+            </div>
+
+            <!-- PASO 1: LOGIN ADMIN -->
+            <div id="admin-login-step" class="cuerpo-modal">
+                <p>Ingresa la clave de supervisor para revisar el historial de evaluaciones:</p>
+                <div class="campo-input" style="margin: 1.5rem 0;">
+                    <input type="password" id="clave-admin" placeholder="Contraseña de Administrador (1234)">
+                </div>
+                <button class="btn-acuenta" onclick="autenticarAdmin()">Ingresar al Panel</button>
+                <p id="error-clave" class="mensaje-error-admin" style="color: var(--color-secundario); font-weight: bold; margin-top: 0.5rem;"></p>
+            </div>
+
+            <!-- PASO 2: TABLA DE HISTORIAL -->
+            <div id="admin-panel-step" class="cuerpo-modal" style="display: none;">
+                <p>Registros de evaluaciones completadas por los colaboradores:</p>
+                <div class="contenedor-tabla">
+                    <table class="tabla-admin">
+                        <thead>
+                            <tr>
+                                <th>Fecha y Hora</th>
+                                <th>Colaborador</th>
+                                <th>Módulo</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-registros-body">
+                            <!-- Se carga dinámicamente con JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="acciones-modal-footer" style="margin-top:1rem; text-align:right;">
+                    <button class="btn-peligro" onclick="borrarHistorialAdmin()">Vaciar Historial</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
