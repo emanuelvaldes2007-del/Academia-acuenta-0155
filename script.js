@@ -391,9 +391,12 @@ function renderizarEvaluacion() {
     mod.preguntas.forEach((p, idx) => {
         html += `<div style="background: #F8FAFC; padding: 1.25rem; border-radius: 8px; margin-bottom: 1.25rem; border: 1px solid #E2E8F0;">
             <p style="font-weight: 600; margin-bottom: 0.8rem;">${idx + 1}. ${p.enunciado}</p>`;
-        p.opciones.forEach((op, optIdx) => {
+       p.opciones.forEach((op, optIdx) => {
+            const letras = ['A', 'B', 'C', 'D'];
+            const letraActual = letras[optIdx] || optIdx;
             html += `<label style="display: block; margin-bottom: 0.5rem; font-size: 0.95rem; cursor: pointer;">
-                <input type="radio" name="p_${idx}" value="${optIdx}" required style="margin-right: 8px;"> ${op}
+                <input type="radio" name="p_${idx}" value="${letraActual}" required style="margin-right: 8px;">
+                ${letraActual}) ${op}
             </label>`;
         });
         html += `</div>`;
