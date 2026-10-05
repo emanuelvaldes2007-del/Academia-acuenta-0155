@@ -91,11 +91,6 @@ body {
     width: 100%;
 }
 
-.btn-grande {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-}
-
 .btn-secundario-sm, .btn-admin-sm {
     background: #e4e6eb;
     border: none;
@@ -150,7 +145,7 @@ body {
 .contenedor-principal {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 1rem 3.5rem 1rem;
 }
 
 .tarjeta-progreso-global {
@@ -184,7 +179,7 @@ body {
 /* GRILLA MÓDULOS */
 .grilla-modulos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
@@ -250,7 +245,7 @@ body {
 .contenedor-pantalla-nueva {
     max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 1rem 3.5rem 1rem;
 }
 
 .btn-volver-menu {

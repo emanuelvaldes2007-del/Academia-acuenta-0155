@@ -37,7 +37,7 @@ function cambiarUsuario() {
 }
 
 function actualizarProgresoGlobal() {
-    const total = 6;
+    const total = 10;
     const completados = modulosCompletados.length;
     const porcentaje = Math.round((completados / total) * 100);
 
@@ -230,7 +230,7 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 2: Verificación de Billetes y Detección de Falsificaciones (Método M.I.T.)",
-                contenido: `<p>Para prevenir el ingreso de dinero falso a la caja, es obligatorio aplicar siempre el <strong>Método M.I.T. (Mirar, Inclinar y Tocar)</strong> al recibir pagos en efectivo:</p><br><ul><li><strong>M - MIRAR:</strong> Pon el billete contra la luz. Busca la marca de agua, el hilo de seguridad y el motivo complementario.</li><li><strong>I - INCLINAR:</strong> Mueve el billete suavemente frente a tus ojos para observar el cambio de color o la franja 3D.</li><li><strong>T - TOCAR:</strong> Pasa tus dedos por la superficie para sentir la textura áspera y el relieve.</li></ul>`
+                contenido: `<p>Para prevenir el ingreso de dinero falso a la caja, es recomendable aplicar siempre el <strong>Método M.I.T. (Mirar, Inclinar y Tocar)</strong> al recibir pagos en efectivo:</p><br><ul><li><strong>M - MIRAR:</strong> Pon el billete contra la luz. Busca la marca de agua, el hilo de seguridad y el motivo complementario.</li><li><strong>I - INCLINAR:</strong> Mueve el billete suavemente frente a tus ojos para observar el cambio de color o la franja 3D.</li><li><strong>T - TOCAR:</strong> Pasa tus dedos por la superficie para sentir la textura áspera y el relieve.</li></ul>`
             }
         ],
         preguntas: [
@@ -250,8 +250,8 @@ const modulosData = {
                 correcta: 1
             },
             {
-                enunciado: "Al empacar o embolsar los productos del cliente en caja, ¿qué precaución principal debes tener?",
-                opciones: ["Empacar productos de limpieza y detergentes junto con productos frescos y carnes.", "Separar strictly los productos químicos y de limpieza de los alimentos para evitar contaminación.", "Mezclar todo en una sola bolsa para ahorrar bolsas plásticas.", "Dejar los productos frágiles al fondo de la bolsa y las latas pesadas arriba."],
+                enunciado: "Al pasar por caja los productos del cliente en, ¿qué precaución principal debes tener?",
+                opciones: ["Juntar productos de limpieza y detergentes junto con productos frescos y carnes.", "Separar estrictamente los productos químicos y de limpieza de los alimentos para evitar contaminación.", "Mezclar todo al finalizar el escaneo de productos.", "Dejar los productos frágiles al borde de la caja."],
                 correcta: 1
             },
             {
@@ -284,7 +284,7 @@ const modulosData = {
                 correcta: 1
             },
             {
-                enunciado: "Al moment de empacar un pedido con productos secos, yogures (fríos) y helados (congelados), ¿cómo se deben almacenar?",
+                enunciado: "Al momento de empacar un pedido con productos secos, yogures (fríos) y helados (congelados), ¿cómo se deben almacenar?",
                 opciones: ["Guardar todo en una misma bolsa grande y dejarla en la góndola de secos.", "Separar en bolsas, rotular con el nombre del cliente y poner secos en góndola, y fríos/congelados en sus respectivos coolers.", "Dejar las bolsas de helados sobre la mesa de la sala Pick Up hasta que llegue el cliente.", "Empacar solo los secos y dejar los fríos sin bolsa dentro del congelador."],
                 correcta: 1
             },
@@ -306,22 +306,519 @@ const modulosData = {
         ]
     },
     6: {
-        titulo: "Módulo 6: Ajuste SMART de Inventario",
+        titulo: "Módulo 6: SMART (Gestión de Inventario y Envases)",
         etapas: [
             {
-                subtitulo: "Etapa 1: Importancia del Ajuste de Inventario",
-                contenido: `<div class="alerta-meta" style="font-size: 1.05rem; line-height: 1.5; color: #004085; background-color: #cce5ff; border-left: 4px solid #0066c0; padding: 1rem; border-radius: 4px;">"El ajuste de nuestro inventario es sumamente importante para nuestros clientes ya que un mal ajuste de un producto puede provocar que este mismo no siga llegando porque ya habrá stock en el sistema y también nos alertara sobre este en los NSG."</div><br><p>Un conteo y ajuste preciso en la plataforma SMART garantiza que el Centro de Distribución envíe la mercadería necesaria a tiempo, evitando faltantes en la góndola y discrepancias en los registros de la tienda.</p>`
+                subtitulo: "Etapa 1: Ajuste de Inventario en SMART (Paso a Paso)",
+                contenido: `
+                    <div class="alerta-meta" style="font-size: 1.05rem; line-height: 1.5; color: #004085; background-color: #cce5ff; border-left: 4px solid #0066c0; padding: 1rem; border-radius: 4px;">
+                        "El ajuste de nuestro inventario es sumamente importante para nuestros clientes ya que un mal ajuste de un producto puede provocar que este mismo no siga llegando porque ya habrá stock en el sistema y también nos alertará sobre este en los NSG."
+                    </div>
+                    
+                    <p style="margin-top: 1.2rem;">Sigue este flujo operativo en la terminal ZEBRA para realizar el ajuste de inventario de forma correcta:</p>
+
+                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
+                        <!-- PASO 1 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Acceso a Legado (Legacy)</h3>
+                                <p>En la pantalla principal de la terminal ZEBRA, ingresar a la aplicación <strong>Legado</strong> e iniciar sesión con tu usuario y contraseña corporativa.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="IMG_1356.jpeg" alt="Legado" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 2 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Inventario Perpetuo</h3>
+                                <p>En el menú de Terminal Portátil, seleccionar la opción <strong>Inventario Perpetuo</strong> y presionar <strong>ENTER</strong>.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="IMG_1357.jpg" alt="Inventario Perpetuo" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 3 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Selección de Múltiples Departamentos</h3>
+                                <p>Como recomendación operacional, seleccionar la opción de ajustar en la sección de <strong>Múltiples Departamentos</strong> para poder procesar varios dptos. a la vez sin salir del menú.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="IMG_1360.jpg" alt="Ajuste Múltiple" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 4 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Escaneo de Producto y Cambio de Ubicación (F5)</h3>
+                                <p>Escanear el código <strong>UPC o Item</strong> del producto a ajustar.</p>
+                                <div style="background: #e2e8f0; padding: 0.6rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem;">
+                                    💡 <strong>Tip operacional:</strong> Al presionar la tecla <strong>F5</strong> cambiamos la ubicación del ajuste a <em>Depósito/Bodega</em>. Para volver a <em>Piso de Ventas</em>, presionamos nuevamente <strong>F5</strong>.
+                                </div>
+                            </div>
+                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
+                                <img src="IMG_1361.jpg" alt="Piso Ventas" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                                <img src="IMG_1362.jpg" alt="Depósito" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 5 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Cierre y Finalización de Ajuste (F10)</h3>
+                                <p>Luego de ingresar la cantidad física a ajustar, presionar la tecla <strong>F10</strong> para finalizar. Se imprimirá un reporte físico del ajuste.</p>
+                                <p style="margin-top: 0.4rem; color: #d00018; font-weight: 600;">⚠️ Para dar por finalizado por completo el proceso, se debe ingresar nuevamente a la sección de ajuste de dptos. múltiples y presionar F10 otra vez.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                subtitulo: "Etapa 2: Devolución de Envases y Reclamo de Mercadería (Paso a Paso)",
+                contenido: `
+                    <p>Sigue esta secuencia en el sistema SMART para tramitar devoluciones de envases y reclamos a proveedores:</p>
+
+                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
+                        <!-- PASO 1 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">1</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Acceso al Menú Principal</h3>
+                                <p>Ingresar al sistema SMART y dirigirse a la opción <strong>Terminal Portátil</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="cap.png" alt="Terminal Portátil" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 2 Y 3 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">2</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Procesos d'Depósito</h3>
+                                <p>En el submenú de Terminal Portátil, seleccionar <strong>Procesos d'Depósito</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="cap0.png" alt="Procesos Depósito" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 4 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">3</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Registra Mercadería</h3>
+                                <p>Dentro de Procesos de Depósito, presionar sobre <strong>Registra Mercadería</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="cap1.png" alt="Registra Mercadería" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 5 Y 6 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">4</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Selección de División y Navegación a RCL</h3>
+                                <p>Ingresar el número de División a devolver (Ejemplo: <strong>Div 28</strong> para envases de bebida). Luego presionar <strong>ENTER</strong> hasta posicionarse en la casilla <strong>RCL</strong> (Reclamo).</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="cap3.png" alt="División 28 RCL" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 7 Y 8 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">5</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Salida y Reclam Mcía</h3>
+                                <p>Seleccionar la opción <strong>2 = Salida</strong> y posteriormente presionar el número <strong>4 = Rclam Mcía</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
+                                <img src="cap3.png" alt="Salida" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                                <img src="cap5.png" alt="Rclam Mcía" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 9 Y 10 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">6</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Tipo de Reclamo e Inicio con F9</h3>
+                                <p>Seleccionar el número <strong>1 = Defectos</strong>. Cuando aparezca el número de reclamo generado, presionar la tecla <strong>F9</strong> para habilitar el ingreso de items.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
+                                <img src="cap4.png" alt="Defectos" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                                <img src="cap6.png" alt="F9 Ingr Item" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 11, 12 Y 13 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">7</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Pistoleo, Confirmación (Y) y Cierre (F5)</h3>
+                                <p>Al pistolear el item, el sistema detectará automáticamente al proveedor. Confirmar presionando <strong>"Y"</strong> dos veces. Continuar ingresando items y al finalizar presionar la tecla <strong>F5</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="cap7.png" alt="Confirmar Y" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 8 Y 9 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">8</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Confirmación de Monto de Impuesto y Código Postal</h3>
+                                <p>Al presionar <strong>F5</strong> aparecerá el mensaje <em>¿Monto Impues Correct?</em>; debemos presionar la letra <strong>"Y"</strong>. Luego, presionar el número <strong>"2"</strong> (OTRO) y luego <strong>"N"</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
+                                <img src="cap8.png" alt="Monto Impuesto Correcto" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                                <img src="cap9.png" alt="Cod-Post OTRO" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 10 Y 11 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">9</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Autorización y Cierre de Reclamo</h3>
+                                <p>Presionar <strong>"F5"</strong> para finalizar. A continuación, presionar <strong>"Y"</strong> para autorizar el proveedor y nuevamente <strong>"Y"</strong> para confirmar memo, finalizando con <strong>F5</strong>.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
+                                <img src="cap10.png" alt="Confirmar F5" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                                <img src="cap11.png" alt="Autorización Proveedor Y Memo" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 12 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">10</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Ingreso Datos Transportista e Impresión</h3>
+                                <p>Rellenar los datos del transportista (RUT, dígito verificador y patente del vehículo) y presionar <strong>ENTER</strong>. Aparecerá la pantalla de confirmación y comenzarán a imprimirse automáticamente las facturas de devolución.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="cap12.png" alt="Ruta Transportista" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+                    </div>
+                `
             }
         ],
         preguntas: [
             {
-                enunciado: "¿Qué problema principal genera en el reabastecimiento realizar un MAL ajuste de inventario en el sistema?",
-                opciones: ["Que el producto deje de llegar desde el Centro de Distribución porque el sistema asumirá que aún hay stock disponible.", "Que la tienda deba cerrar antes de tiempo por falta de clientes.", "Que se dupliquen las cajas registradoras automáticamente.", "Que el precio del producto aumente un 50% en el sistema."],
+                enunciado: "¿Qué tecla de la ZEBRA permite alternar la ubicación del ajuste entre 'Piso Ventas' y 'Depósito'?",
+                opciones: ["F3", "F5", "F10", "Enter"],
+                correcta: 1
+            },
+            {
+                enunciado: "Para dar por finalizado por completo el ajuste y procesar el reporte impreso, ¿cuál es el paso final indispensable?",
+                opciones: ["Reiniciar la pistola Zebra.", "Presionar F10, volver a ingresar a la sección de ajuste de dptos. múltiples y presionar nuevamente F10.", "Sacarle la batería a la terminal.", "Apagar la impresora de red."],
+                correcta: 1
+            },
+            {
+                enunciado: "Al tramitar una devolución de envases de bebida en el menú de Registra Mercadería de SMART, ¿en qué columna se debe posicionar para iniciar el reclamo?",
+                opciones: ["P.O.", "FAC", "RCL", "MTR"],
+                correcta: 2
+            },
+            {
+                enunciado: "¿Qué tecla activa la pantalla para comenzar a ingresar/pistolear items en el registro de reclamo?",
+                opciones: ["F3", "F5", "F9", "F10"],
+                correcta: 2
+            }
+        ]
+    },
+    7: {
+        titulo: "Módulo 7: Recepción de Proveedores",
+        etapas: [
+            {
+                subtitulo: "Etapa 1: Paso a Paso Operativo de Recepción en Terminal",
+                contenido: `
+                    <p>Sigue esta secuencia estándar en la terminal ZEBRA para procesar la entrada de mercadería de proveedores directos:</p>
+
+                    <!-- INFORMACIÓN ADICIONAL: EJEMPLO DE FACTURA -->
+                    <div style="background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 10px; padding: 1.25rem; margin: 1rem 0 1.5rem 0;">
+                        <h4 style="color: #3730a3; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px;">
+                            📄 Referencia Visual: Lectura de Datos en Factura del Proveedor
+                        </h4>
+                        <p style="font-size: 0.9rem; color: #4338ca; margin-bottom: 1rem;">
+                            Utiliza la siguiente guía gráfica para identificar rápidamente los datos clave en el documento físico del proveedor antes de ingresarlos a la terminal ZEBRA:
+                        </p>
+                        
+                        <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 220px; max-width: 320px; text-align: center;">
+                                <img src="155.png" alt="Factura de Proveedor Marcada" style="width: 100%; border-radius: 8px; border: 1px solid #a5b4fc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                            </div>
+                            <div style="flex: 1.2; min-width: 220px;">
+                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.92rem;">
+                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #0071ce; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                                        <strong style="color: #0071ce;">🟦 Color Azul:</strong> Número de Factura (ubicado en el recuadro superior derecho de la factura).
+                                    </li>
+                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #d00018; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                                        <strong style="color: #d00018;">🔴 Color Rojo:</strong> Orden de Compra (OC / PO) (ubicada en la sección de 'Documentos Referenciados').
+                                    </li>
+                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #7e22ce; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                                        <strong style="color: #7e22ce;">🟣 Color Morado:</strong> Código Item y Descripción de Productos (detalle de la mercadería enviada por el proveedor).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
+                        <!-- PASO 1 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Ingreso a la App Recepción</h3>
+                                <p>En la pantalla de la terminal ZEBRA, seleccionar e ingresar a la aplicación <strong>App Recepción</strong>.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="IMG_1372.jpeg" alt="App Recepción" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 2 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Selección de Recepción Directa</h3>
+                                <p>En el menú principal de la App Recibo, presionar la opción <strong>Recepción Directa</strong>.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="IMG_1373.jpeg" alt="Recepción Directa" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 3 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Ingreso de Orden de Compra (OC) y Factura</h3>
+                                <p>Ingresar el número de <strong>Orden de Compra (PO / OC)</strong> impreso en la factura y confirmarlo. Luego, ingresar el número de <strong>Factura</strong> correspondiente.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="IMG_1375.jpeg" alt="Ingreso OC" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 4 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Escaneo (Pistoleo) y Finalización</h3>
+                                <p>Comenzar el pistoleo de cada uno de los productos entregados por el proveedor. Cuando la cantidad coincida y todo esté verificado, presionar el botón <strong>Finalizar</strong> para cerrar la factura.</p>
+                                <div style="background: #e6f4ea; padding: 0.6rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem; color: #137333;">
+                                    📌 <strong>Nota:</strong> Si el proveedor trae múltiples documentos, repetir el mismo proceso desde el Paso 2 para cada factura adicional.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                subtitulo: "Etapa 2: Control de Calidad y Cadena de Frío",
+                contenido: `<p><strong>Criterios de Aceptación y Rechazo:</strong></p><br><ul><li><strong>Productos Perecibles / Congelados:</strong> Controlar la temperatura del camión antes de descargar y verificar las fechas de vencimiento.</li></ul>`
+            }
+        ],
+        preguntas: [
+            {
+                enunciado: "¿En qué opción del menú principal de la App Recibo se debe ingresar para procesar a un proveedor directo?",
+                opciones: ["Recepción Centralizada", "Recepción Directa", "Recepción de Transferencia", "Ajuste SMART"],
+                correcta: 1
+            },
+            {
+                enunciado: "¿Qué dato indispensable impreso en la factura del proveedor se debe ingresar primero en la terminal ZEBRA?",
+                opciones: ["El número de la patente del camión.", "El número de la Orden de Compra (OC / PO) y el número de Factura.", "El Rut del chofer.", "La hora de llegada."],
+                correcta: 1
+            },
+            {
+                enunciado: "Una vez finalizado el pistoleo completo de los productos de una factura, ¿cuál es la acción para cerrar el documento?",
+                opciones: ["Reiniciar la terminal ZEBRA.", "Presionar el botón 'Finalizar' para dar por concluida la factura.", "Borrar el historial de compras.", "Firmar la factura sin cerrar en la aplicación."],
+                correcta: 1
+            }
+        ]
+    },
+  8: {
+        titulo: "Módulo 8: Modulares - Sala",
+        etapas: [
+            {
+                subtitulo: "Etapa 1: Planogramas y Plano Modular",
+                contenido: `<p><strong>¿Qué es un Planograma / Modular?</strong></p><p>Es la representación gráfica oficial que define la ubicación exacta, cantidad de caras (frentes) y repisas asignadas a cada producto dentro de las góndolas de la sala.</p><br><ul><li><strong>Respetar las Caras (Frenteo):</strong> No expandir productos ni tapar espacios vacíos con mercadería que no corresponde al plano.</li><li><strong>Flejes de Precio Ajustados:</strong> Cada producto debe tener su fleje de precio actualizado justo debajo de su primera cara a la izquierda.</li><li><strong>Alineación de Repisas:</strong> Mantener la altura marcada en el plano para optimizar el espacio vertical.</li></ul>`
+            },
+            {
+                subtitulo: "Etapa 2: Paso a Paso para Buscar e Imprimir un Modular",
+                contenido: `
+                    <p>Sigue esta secuencia paso a paso en la terminal ZEBRA para visualizar e imprimir planogramas modulares:</p>
+
+                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
+                        <!-- PASO 1 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">1</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Ingreso a la App Inventory Management</h3>
+                                <p>En la pantalla principal de la terminal ZEBRA, seleccionar e ingresar a la aplicación <strong>Inventory Management</strong>.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="Mod.png" alt="Inventory Management" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 2 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">2</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Desplegar Menú Principal</h3>
+                                <p>Presionar las <strong>3 líneas</strong> (menú hamburguesa) ubicadas en la esquina superior izquierda de la pantalla.</p>
+                            </div>
+                            <div style="max-width: 140px; text-align: center;">
+                                <img src="mod1.png" alt="Piso de Venta Menú" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 3 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">3</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Acceso a Modulares/Ub. Sala</h3>
+                                <p>En el panel lateral desplegado, seleccionar la opción <strong>Modulares/Ub. Sala</strong>.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="mod2.png" alt="Modulares Ub Sala" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 4 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">4</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Seleccionar Modular</h3>
+                                <p>Dentro de la <strong>App Modulares</strong>, presionar sobre la sección <strong>Modular</strong>.</p>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="mod3.png" alt="App Modulares Modular" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 5 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">5</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario); font-size: 1rem;">Pestañas de Estado de Modulares</h3>
+                                <p>En la parte superior encontraremos 3 opciones de estado importantes:</p>
+                                <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.92rem;">
+                                    <li><strong style="color: #137333;">🟢 Listo / Tarde:</strong> Modulares listos para implementar en sala. <em style="color: #555;">Nota: Si nos pasamos de la fecha límite, quedarán marcados como "Tarde".</em></li>
+                                    <li><strong style="color: #0071ce;">🔵 Futuros:</strong> Modulares programados y próximos a cambiar dentro del local.</li>
+                                    <li><strong style="color: #d97706;">🟠 Actual:</strong> Modulares vigentes que están en uso actualmente sin cambios activos.</li>
+                                </ul>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="mod4.png" alt="Pestañas de estado" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+
+                        <!-- PASO 6 -->
+                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
+                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">6</div>
+                            <div class="contenido-paso" style="flex: 1;">
+                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Vista Detallada e Impresión</h3>
+                                <p>Al ingresar a un modular (por ejemplo, <em>2001 HAMBURGUESA</em>), se visualiza la estructura (como las 4 secciones/metros de extensión).</p>
+                                <div style="background: #eef2ff; border-left: 4px solid #0071ce; padding: 0.75rem; border-radius: 6px; margin-top: 0.6rem; font-size: 0.9rem; color: #1e40af;">
+                                    💡 <strong>SUGERENCIA DE TRABAJO:</strong> Para trabajarlo de manera más cómoda en sala, se recomienda presionar el botón <strong>Imprimir</strong> y elegir <strong>Seleccionar documentos</strong>.
+                                </div>
+                            </div>
+                            <div style="max-width: 120px; text-align: center;">
+                                <img src="mod5.png" alt="Vista Detallada Modular" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        ],
+        preguntas: [
+            {
+                enunciado: "Si un producto de tu pasillo se agota por completo, ¿por qué NO debes tapar ese espacio vacante corriendo el producto vecino?",
+                opciones: ["Porque altera la capacidad oficial del plano (modular), oculta el quiebre visual y dificulta la reposición correcta.", "Porque los clientes prefieren ver las góndolas desordenadas.", "Porque el sistema cobra una multa automática.", "No hay problema, se puede tapar con cualquier producto."],
                 correcta: 0
             },
             {
-                enunciado: "¿De qué manera afecta un ajuste incorrecto de inventario al indicador NSG (Nivel de Servicio en Góndola)?",
-                opciones: ["Mantiene el NSG en 100% todo el tiempo sin variaciones.", "Genera alertas por descuadres y distorsiona la medición real de disponibilidad de productos en la repisa.", "Elimina automáticamente los quiebres de stock sin necesidad de reponer.", "No afecta de ninguna manera los indicadores de la tienda."],
+                enunciado: "¿Dónde debe ubicarse correctamente el fleje con el precio del producto según la norma del plano modular?",
+                opciones: ["Al centro de la repisa superior.", "Justo debajo del producto, alineado con su primera cara a la izquierda.", "Pegado en la parte posterior del producto.", "Al inicio del pasillo en un cartel grande."],
+                correcta: 1
+            },
+            {
+                enunciado: "¿En qué aplicación de la terminal ZEBRA se realiza la consulta e impresión de modulares?",
+                opciones: ["App Recepción", "Inventory Management", "Legado / SMART", "Instaleap"],
+                correcta: 1
+            },
+            {
+                enunciado: "Dentro de la App Modulares, ¿qué indica la pestaña con estado 'Futuro'?",
+                opciones: ["Modulares que fueron eliminados el año pasado.", "Modulares programados y próximos a cambiar dentro de la sala.", "Modulares que ya están vencidos y mermados.", "Productos que no tienen precio registrado."],
+                correcta: 1
+            }
+        ]
+    },
+    9: {
+        titulo: "Módulo 9: Rebaja Norma de Retiro (RNR)",
+        etapas: [
+            {
+                subtitulo: "Etapa 1: Detección Oportuna y Protocolo RNR",
+                contenido: `<p><strong>Proceso de Rebaja por Norma de Retiro (RNR):</strong></p><p>El proceso RNR permite vender productos cuya fecha de vencimiento está próxima a cumplirse, aplicándoles un descuento especial para incentivar su venta y evitar que se transformen en merma total.</p><br><ul><li><strong>Revisión Diaria (Rutina RNR):</strong> Identificar productos con días críticos previo al vencimiento (según categoría).</li><li><strong>Impresión e Instalación de Etiqueta RNR:</strong> Escanear el producto con la pistola Zebra, generar el sticker con el nuevo precio rebajado y pegarlo tapando el código de barras original.</li><li><strong>Ubicación Preferencial:</strong> Colocar el producto en el contenedor o mueble destinado a promociones RNR.</li></ul>`
+            }
+        ],
+        preguntas: [
+            {
+                enunciado: "¿Cuál es el propósito principal del procedimiento de Rebaja Norma de Retiro (RNR)?",
+                opciones: ["Vender productos defectuosos.", "Ofrecer productos próximos a vencer con un precio rebajado para evitar su vencimiento y reducir la merma.", "Aumentar el precio de los productos de mayor demanda.", "Cambiar la marca de los productos en góndola."],
+                correcta: 1
+            },
+            {
+                enunciado: "Al colocar la etiqueta con el código de barras RNR en el producto rebajado, ¿dónde se debe pegar?",
+                opciones: ["Al lado del código original sin taparlo.", "Sobre el código de barras original para asegurar que en caja se escanee el precio rebajado.", "En el fondo de la caja del embalaje.", "En la parte superior de la tapa únicamente."],
+                correcta: 1
+            }
+        ]
+    },
+    10: {
+        titulo: "Módulo 10: Mantenimiento Operacional de Sala",
+        etapas: [
+            {
+                subtitulo: "Etapa 1: Operación y Limpieza del Horno Dely",
+                contenido: `<p><strong>Procedimiento de Horno Dely (Comidas Preparadas / Polllos):</strong></p><ul><li><strong>Precalentamiento:</strong> Encender el equipo y seleccionar el programa predeterminado de cocción.</li><li><strong>Carga Segura:</strong> Utilizar guantes térmicos para alta temperatura al introducir o retirar las espadas/bandejas.</li><li><strong>Limpieza Diaria:</strong> Al finalizar la jornada, aplicar desengrasante grado alimenticio cuando el horno haya bajado de 40°C. Limpiar cristales y bandeja junta-grasa.</li></ul>`
+            },
+            {
+                subtitulo: "Etapa 2: Operación y Cuidado del Horno Panadería",
+                contenido: `<p><strong>Procedimiento de Horno Panadería:</strong></p><ul><li><strong>Inyección de Vapor:</strong> Verificar que la llave de agua de suministro esté abierta antes de iniciar el ciclo.</li><li><strong>Carga de Carros:</strong> Asegurar los carros de bandejas en el enganche superior/inferior antes de cerrar la puerta.</li><li><strong>Seguridad:</strong> Nunca abrir la puerta de golpe durante la inyección de vapor para evitar quemaduras por vapor caliente.</li></ul>`
+            },
+            {
+                subtitulo: "Etapa 3: Arreglo, Calibración y Cuidado de Balanza Dely",
+                contenido: `<p><strong>Procedimiento y Mantenimiento de Balanza Dely:</strong></p><ol><li><strong>Nivelación y Puesta a Cero:</strong> Verificar que la burbuja de nivelación esté centrada en la base de la balanza. Presionar la tecla <em>ZERO / TARA</em> si marca valores erróneos en vacío.</li><li><strong>Limpieza de Cabezal Térmico:</strong> Desconectar la balanza y limpiar suavemente el cabezal de impresión con un cotón impregnado en alcohol isopropílico para evitar stickers borrosos.</li><li><strong>Cambio de Rollo de Etiquetas:</strong> Colocar el rollo respetando la guía de paso del papel para prevenir atascos de cinta.</li></ol>`
+            }
+        ],
+        preguntas: [
+            {
+                enunciado: "Si la balanza de Dely está imprimiendo las etiquetas con líneas blancas borrosas o ilegibles, ¿cuál es la primera acción de mantenimiento correctivo?",
+                opciones: ["Golpear la balanza con la mano.", "Apagar la balanza y limpiar suavemente el cabezal térmico con alcohol isopropílico.", "Cambiar la balanza por una nueva inmediatamente.", "Remojar el cabezal con agua de la llave."],
+                correcta: 1
+            },
+            {
+                enunciado: "Al abrir la puerta del Horno de Panadería durante el proceso de horneado con inyección de vapor, ¿qué medida de precaución de seguridad se debe tomar?",
+                opciones: ["Abrir de golpe y meter la cara para revisar el pan.", "Abrir entreabierta la puerta unos segundos para que escape el vapor acumulado antes de abrir del todo.", "Apagar la luz de la sala.", "Soplar la puerta del horno."],
+                correcta: 1
+            },
+            {
+                enunciado: "¿En qué momento se debe realizar la limpieza profunda con desengrasante del Horno Dely?",
+                opciones: ["Con el horno encendido a máxima temperatura.", "Al finalizar el turno, cuando la temperatura interna haya bajado a un nivel seguro (menos de 40°C).", "Una vez al mes únicamente.", "Mientras los pollos se están cocinando."],
                 correcta: 1
             }
         ]
