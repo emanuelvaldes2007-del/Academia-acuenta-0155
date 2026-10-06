@@ -256,7 +256,7 @@ const modulosData = {
 
                     <p style="margin-top: 1.5rem; font-weight: 600;">Referencia Visual de Verificación de Billetes:</p>
                     <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
-                        <img src="billete1.png" alt="Verificación de Billete 1" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
+                        <img src="billete.png" alt="Verificación de Billete 1" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
                         <img src="billete2.png" alt="Verificación de Billete 2" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
                         <img src="billete3.png" alt="Verificación de Billete 3" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
                     </div>
@@ -595,7 +595,7 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 2: Control de Calidad y Cadena de Frío",
-                contenido: `<p><strong>Criterios de Aceptación y Rechazo:</strong></p><br><ul><li><strong>Productos Perecibles / Congelados:</strong> Controlar la temperatura del camión antes de descargar y verificar las fechas de vencimiento.</li><li><strong>Cajas e Insumos:</strong> Rechazar embalajes aplastados, mojados o con muestras de plagas.</li><li><strong>Diferencias de Inventario:</strong> Si falta mercadería, realizar el ajuste en el sistema antes de firmar y timbrar la guía del chofer.</li></ul>`
+                contenido: `<p><strong>Criterios de Aceptación y Rechazo:</strong></p><br><ul><li><strong>Productos Perecibles / Congelados:</strong> Controlar la temperatura del camión antes de descargar y verificar las fechas de vencimiento.</li></ul>`
             }
         ],
         preguntas: [
@@ -709,8 +709,72 @@ const modulosData = {
         titulo: "Módulo 9: Rebaja Norma de Retiro (RNR)",
         etapas: [
             {
-                subtitulo: "Etapa 1: Detección Oportuna y Protocolo RNR",
-                contenido: `<p><strong>Proceso de Rebaja por Norma de Retiro (RNR):</strong></p><p>El proceso RNR permite vender productos cuya fecha de vencimiento está próxima a cumplirse, aplicándoles un descuento especial para incentivar su venta y evitar que se transformen en merma total.</p><br><ul><li><strong>Revisión Diaria (Rutina RNR):</strong> Identificar productos con días críticos previo al vencimiento (según categoría).</li><li><strong>Impresión e Instalación de Etiqueta RNR:</strong> Escanear el producto con la pistola Zebra, generar el sticker con el nuevo precio rebajado y pegarlo tapando el código de barras original.</li><li><strong>Ubicación Preferencial:</strong> Colocar el producto en el contenedor o mueble destinado a promociones RNR.</li></ul>`
+                subtitulo: "Proceso Operativo Rebaja Norma de Retiro (RNR)",
+                contenido: `
+                    <p><strong>Introducción:</strong> La Rebaja Norma de Retiro (RNR) es un proceso operativo clave de Walmart Chile que busca disminuir el desperdicio de alimentos y productos en las tiendas, aplicando un descuento promocional a aquellos artículos próximos a su fecha de vencimiento que aún se encuentran en óptimas condiciones para el consumo.</p>
+                    <br>
+                    <div class="flujo-pasos">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso">
+                                <h3>Paso 1: Identificación y Selección</h3>
+                                <p>Recorre todas las góndolas correspondientes y revisa minuciosamente las fechas de vencimiento de los productos. Retira aquellos que se encuentren dentro del plazo norma de retiro y comprueba que sus envases estén en buenas condiciones de sellado e higiene.</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso">
+                                <h3>Paso 2: Acceso a la ZEBRA</h3>
+                                <p>En la pantalla principal con la lista de aplicaciones, localiza y abre la app <strong>Intl Claims</strong>, e inicia sesión con tus credenciales. Asegúrate de tener una impresora encendida y vinculada.</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="claims.png" alt="Acceso a la app Intl Claims">
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso">
+                                <h3>Paso 3: Pantalla de Escaneo</h3>
+                                <p>Una vez dentro de la app de <strong>Claims</strong>, verás la pantalla de Inicio rápido con la leyenda <em>"Escanea ítems y genera etiquetas en un solo lugar"</em>. Toma el lector y presiona el gatillo físico o los botones amarillos laterales para escanear el código de barras original del producto.</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="claims1.png" alt="Pantalla de Escaneo en Claims">
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso">
+                                <h3>Paso 4: Selección del Proceso (RNR)</h3>
+                                <p>Al escanear el artículo (ejemplo: Plateada Chilena del Depto 93 con un precio regular de $5.790), la pantalla mostrará los detalles completos de la consulta. En la barra inferior de opciones, presiona sobre el botón verde <strong>RNR</strong> para seleccionar este destino promocional.</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="rnr.png" alt="Selección de opción RNR">
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">5</div>
+                            <div class="contenido-paso">
+                                <h3>Paso 5: Confirmar Rebaja e Impresión</h3>
+                                <p>El sistema te pedirá confirmación mediante el mensaje emergente <strong>"Confirmar RNR: Valida que el ítem escaneado esté habilitado para RNR en tu local"</strong>. Confirma las condiciones físicas del producto y presiona <strong>CONFIRMAR</strong>. La impresora portátil Bluetooth emitirá de inmediato la etiqueta amarilla autoadhesiva con el precio rebajado.</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="impresion.png" alt="Confirmar RNR e impresión de etiqueta">
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">6</div>
+                            <div class="contenido-paso">
+                                <h3>Paso 6: Rotulado de producto y exhibición</h3>
+                                <p>Despega la etiqueta amarilla y pégala de forma visible en la cara frontal del producto <strong>cubriendo totalmente el código de barras original</strong> del fabricante para asegurar que las cajas registradoras cobren el valor rebajado sin problemas. Finalmente, exhibe los productos rotulados en la góndola.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
             }
         ],
         preguntas: [
