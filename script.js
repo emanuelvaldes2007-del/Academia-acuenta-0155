@@ -121,33 +121,33 @@ const modulosData = {
                 subtitulo: "Etapa 3: Paso a Paso Operativo en Sala con Zebra y Me@Walmart",
                 contenido: `
                     <p>Sigue este flujo estándar de trabajo para garantizar el cumplimiento de la meta del Nivel de Servicio en Góndola:</p>
-                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
-                            <div class="contenido-paso" style="flex: 1;"><h3 style="margin-bottom: 0.5rem;">Impresión del Reporte de NSG</h3><p>Imprime el reporte correspondiente al turno actual según la sección (ACP, PPS o GM).</p></div>
+                    <div class="flujo-pasos">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso"><h3>Impresión del Reporte de NSG</h3><p>Imprime el reporte correspondiente al turno actual según la sección (ACP, PPS o GM).</p></div>
                         </div>
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
-                            <div class="contenido-paso" style="flex: 1;"><h3 style="margin-bottom: 0.5rem;">Búsqueda de Productos en Sala</h3><p>Dirígete a los pasillos con el reporte impreso para localizar físicamente cada producto indicado.</p></div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso"><h3>Búsqueda de Productos en Sala</h3><p>Dirígete a los pasillos con el reporte impreso para localizar físicamente cada producto indicado.</p></div>
                         </div>
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
-                            <div class="contenido-paso" style="flex: 1;"><h3 style="margin-bottom: 0.5rem;">Verificar Reposición y Flejes de Precio</h3><p>Comprueba que el producto esté bien repuesto bajo criterio FIFO y que el fleje de precio esté actualizado.</p></div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso"><h3>Verificar Reposición y Flejes de Precio</h3><p>Comprueba que el producto esté bien repuesto bajo criterio FIFO y que el fleje de precio esté actualizado.</p></div>
                         </div>
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
-                            <div class="contenido-paso" style="flex: 1;"><h3 style="margin-bottom: 0.5rem;">Ingresar a Me@Walmart en la Pistola Zebra</h3><p>Inicia sesión en la aplicación corporativa Me@Walmart utilizando tu usuario oficial.</p></div>
-                            <div style="max-width: 140px; text-align: center;"><img src="image_79a0c8.png" alt="Me@Walmart" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;"></div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso"><h3>Ingresar a Me@Walmart en la Pistola Zebra</h3><p>Inicia sesión en la aplicación corporativa Me@Walmart utilizando tu usuario oficial.</p></div>
+                            <div class="contenedor-img-paso"><img src="image_79a0c8.png" alt="Me@Walmart"></div>
                         </div>
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
-                            <div class="contenido-paso" style="flex: 1;"><h3 style="margin-bottom: 0.5rem;">Disponibilidad > Mi Repo</h3><p>Abre el menú, ingresa a la sección de Disponibilidad y selecciona la opción Mi Repo.</p></div>
-                            <div style="max-width: 140px; text-align: center;"><img src="IMG_1313.png" alt="Mi Repo" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;"></div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">5</div>
+                            <div class="contenido-paso"><h3>Disponibilidad > Mi Repo</h3><p>Abre el menú, ingresa a la sección de Disponibilidad y selecciona la opción Mi Repo.</p></div>
+                            <div class="contenedor-img-paso"><img src="IMG_1313.png" alt="Mi Repo"></div>
                         </div>
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">6</div>
-                            <div class="contenido-paso" style="flex: 1;"><h3 style="margin-bottom: 0.5rem;">Pasillos, Escaneo y Registro</h3><p>Selecciona Pasillo, escanea el código de barras con el scanner e ingresa la existencia disponible.</p></div>
-                            <div style="max-width: 120px; text-align: center; display: flex; gap: 6px;"><img src="IMG_1314.jpg" alt="Pasillos" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;"><img src="IMG_1315.png" alt="Escaneo" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;"></div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">6</div>
+                            <div class="contenido-paso"><h3>Pasillos, Escaneo y Registro</h3><p>Selecciona Pasillo, escanea el código de barras con el scanner e ingresa la existencia disponible.</p></div>
+                            <div class="contenedor-img-paso grupo-imagenes"><img src="IMG_1314.jpg" alt="Pasillos"><img src="IMG_1315.png" alt="Escaneo"></div>
                         </div>
                     </div>
                 `
@@ -317,66 +317,66 @@ const modulosData = {
                     
                     <p style="margin-top: 1.2rem;">Sigue este flujo operativo en la terminal ZEBRA para realizar el ajuste de inventario de forma correcta:</p>
 
-                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
+                    <div class="flujo-pasos">
                         <!-- PASO 1 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Acceso a Legado (Legacy)</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso">
+                                <h3>Acceso a Legado (Legacy)</h3>
                                 <p>En la pantalla principal de la terminal ZEBRA, ingresar a la aplicación <strong>Legado</strong> e iniciar sesión con tu usuario y contraseña corporativa.</p>
                             </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="IMG_1356.jpeg" alt="Legado" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso">
+                                <img src="IMG_1356.jpeg" alt="Legado">
                             </div>
                         </div>
 
                         <!-- PASO 2 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Inventario Perpetuo</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso">
+                                <h3>Inventario Perpetuo</h3>
                                 <p>En el menú de Terminal Portátil, seleccionar la opción <strong>Inventario Perpetuo</strong> y presionar <strong>ENTER</strong>.</p>
                             </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="IMG_1357.jpg" alt="Inventario Perpetuo" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso">
+                                <img src="IMG_1357.jpg" alt="Inventario Perpetuo">
                             </div>
                         </div>
 
                         <!-- PASO 3 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Selección de Múltiples Departamentos</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso">
+                                <h3>Selección de Múltiples Departamentos</h3>
                                 <p>Como recomendación operacional, seleccionar la opción de ajustar en la sección de <strong>Múltiples Departamentos</strong> para poder procesar varios dptos. a la vez sin salir del menú.</p>
                             </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="IMG_1360.jpg" alt="Ajuste Múltiple" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso">
+                                <img src="IMG_1360.jpg" alt="Ajuste Múltiple">
                             </div>
                         </div>
 
                         <!-- PASO 4 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Escaneo de Producto y Cambio de Ubicación (F5)</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso">
+                                <h3>Escaneo de Producto y Cambio de Ubicación (F5)</h3>
                                 <p>Escanear el código <strong>UPC o Item</strong> del producto a ajustar.</p>
                                 <div style="background: #e2e8f0; padding: 0.6rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem;">
                                     💡 <strong>Tip operacional:</strong> Al presionar la tecla <strong>F5</strong> cambiamos la ubicación del ajuste a <em>Depósito/Bodega</em>. Para volver a <em>Piso de Ventas</em>, presionamos nuevamente <strong>F5</strong>.
                                 </div>
                             </div>
-                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
-                                <img src="IMG_1361.jpg" alt="Piso Ventas" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                                <img src="IMG_1362.jpg" alt="Depósito" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso grupo-imagenes">
+                                <img src="IMG_1361.jpg" alt="Piso Ventas">
+                                <img src="IMG_1362.jpg" alt="Depósito">
                             </div>
                         </div>
 
                         <!-- PASO 5 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Cierre y Finalización de Ajuste (F10)</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">5</div>
+                            <div class="contenido-paso">
+                                <h3>Cierre y Finalización de Ajuste (F10)</h3>
                                 <p>Luego de ingresar la cantidad física a ajustar, presionar la tecla <strong>F10</strong> para finalizar. Se imprimirá un reporte físico del ajuste.</p>
-                                <p style="margin-top: 0.4rem; color: #d00018; font-weight: 600;">⚠️ Para dar por finalizado por completo el proceso, se debe ingresar nuevamente a la sección de ajuste de dptos. múltiples y presionar F10 otra vez.</p>
+                                <p style="margin-top: 0.4rem; color: #d00018; font-weight: 600;">⚠️️ Para dar por finalizado por completo el proceso, se debe ingresar nuevamente a la sección de ajuste de dptos. múltiples y presionar F10 otra vez.</p>
                             </div>
                         </div>
                     </div>
@@ -387,129 +387,107 @@ const modulosData = {
                 contenido: `
                     <p>Sigue esta secuencia en el sistema SMART para tramitar devoluciones de envases y reclamos a proveedores:</p>
 
-                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
-                        <!-- PASO 1 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">1</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Acceso al Menú Principal</h3>
+                    <div class="flujo-pasos">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso">
+                                <h3>Acceso al Menú Principal</h3>
                                 <p>Ingresar al sistema SMART y dirigirse a la opción <strong>Terminal Portátil</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="cap.png" alt="Terminal Portátil" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="smar.png" alt="Terminal Portátil"></div>
                         </div>
 
-                        <!-- PASO 2 Y 3 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">2</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Procesos d'Depósito</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso">
+                                <h3>Procesos d'Depósito</h3>
                                 <p>En el submenú de Terminal Portátil, seleccionar <strong>Procesos d'Depósito</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="cap0.png" alt="Procesos Depósito" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 190750.png" alt="Procesos Depósito"></div>
                         </div>
 
-                        <!-- PASO 4 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">3</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Registra Mercadería</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso">
+                                <h3>Registra Mercadería</h3>
                                 <p>Dentro de Procesos de Depósito, presionar sobre <strong>Registra Mercadería</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="cap1.png" alt="Registra Mercadería" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 190822.png" alt="Registra Mercadería"></div>
                         </div>
 
-                        <!-- PASO 5 Y 6 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">4</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Selección de División y Navegación a RCL</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso">
+                                <h3>Selección de División y Navegación a RCL</h3>
                                 <p>Ingresar el número de División a devolver (Ejemplo: <strong>Div 28</strong> para envases de bebida). Luego presionar <strong>ENTER</strong> hasta posicionarse en la casilla <strong>RCL</strong> (Reclamo).</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="cap3.png" alt="División 28 RCL" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 191000.png" alt="División 28 RCL"></div>
                         </div>
 
-                        <!-- PASO 7 Y 8 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">5</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Salida y Reclam Mcía</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">5</div>
+                            <div class="contenido-paso">
+                                <h3>Salida y Reclam Mcía</h3>
                                 <p>Seleccionar la opción <strong>2 = Salida</strong> y posteriormente presionar el número <strong>4 = Rclam Mcía</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
-                                <img src="cap3.png" alt="Salida" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                                <img src="cap5.png" alt="Rclam Mcía" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso grupo-imagenes">
+                                <img src="Captura de pantalla 2026-10-05 191057.jpg" alt="Salida">
+                                <img src="Captura de pantalla 2026-10-05 191144.jpg" alt="Rclam Mcía">
                             </div>
                         </div>
 
-                        <!-- PASO 9 Y 10 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">6</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Tipo de Reclamo e Inicio con F9</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">6</div>
+                            <div class="contenido-paso">
+                                <h3>Tipo de Reclamo e Inicio con F9</h3>
                                 <p>Seleccionar el número <strong>1 = Defectos</strong>. Cuando aparezca el número de reclamo generado, presionar la tecla <strong>F9</strong> para habilitar el ingreso de items.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
-                                <img src="cap4.png" alt="Defectos" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                                <img src="cap6.png" alt="F9 Ingr Item" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso grupo-imagenes">
+                                <img src="Captura de pantalla 2026-10-05 191221.jpg" alt="Defectos">
+                                <img src="Captura de pantalla 2026-10-05 191258.jpg" alt="F9 Ingr Item">
                             </div>
                         </div>
 
-                        <!-- PASO 11, 12 Y 13 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">7</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Pistoleo, Confirmación (Y) y Cierre (F5)</h3>
-                                <p>Al pistolear el item, el sistema detectará automáticamente al proveedor. Confirmar presionando <strong>"Y"</strong> dos veces. Continuar ingresando items y al finalizar presionar la tecla <strong>F5</strong>.</p>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">7</div>
+                            <div class="contenido-paso">
+                                <h3>Pistoleo e Ingreso de Items</h3>
+                                <p>Al pistolear el item, el sistema detectará automáticamente el proveedor. Confirmar presionando <strong>"Y"</strong> dos veces. Continuar ingresando items y al finalizar presionar la tecla <strong>F5</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="cap7.png" alt="Confirmar Y" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 191332.png" alt="Confirmar Y"></div>
                         </div>
 
-                        <!-- PASO 8 Y 9 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">8</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Confirmación de Monto de Impuesto y Código Postal</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">8</div>
+                            <div class="contenido-paso">
+                                <h3>Confirmación de Monto de Impuesto y Código Postal</h3>
                                 <p>Al presionar <strong>F5</strong> aparecerá el mensaje <em>¿Monto Impues Correct?</em>; debemos presionar la letra <strong>"Y"</strong>. Luego, presionar el número <strong>"2"</strong> (OTRO) y luego <strong>"N"</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
-                                <img src="cap8.png" alt="Monto Impuesto Correcto" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                                <img src="cap9.png" alt="Cod-Post OTRO" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso grupo-imagenes">
+                                <img src="cap8.png" alt="Monto Impuesto Correcto">
+                                <img src="cap9.png" alt="Cod-Post OTRO">
                             </div>
                         </div>
 
-                        <!-- PASO 10 Y 11 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">9</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Autorización y Cierre de Reclamo</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">9</div>
+                            <div class="contenido-paso">
+                                <h3>Autorización y Cierre de Reclamo</h3>
                                 <p>Presionar <strong>"F5"</strong> para finalizar. A continuación, presionar <strong>"Y"</strong> para autorizar el proveedor y nuevamente <strong>"Y"</strong> para confirmar memo, finalizando con <strong>F5</strong>.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center; display: flex; gap: 4px;">
-                                <img src="cap10.png" alt="Confirmar F5" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                                <img src="cap11.png" alt="Autorización Proveedor Y Memo" style="width: 50%; border-radius: 6px; border: 1px solid #CBD5E1;">
+                            <div class="contenedor-img-paso grupo-imagenes">
+                                <img src="cap10.png" alt="Confirmar F5">
+                                <img src="cap11.png" alt="Autorización Proveedor Y Memo">
                             </div>
                         </div>
 
-                        <!-- PASO 12 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">10</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Ingreso Datos Transportista e Impresión</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">10</div>
+                            <div class="contenido-paso">
+                                <h3>Ingreso Datos Transportista e Impresión</h3>
                                 <p>Rellenar los datos del transportista (RUT, dígito verificador y patente del vehículo) y presionar <strong>ENTER</strong>. Aparecerá la pantalla de confirmación y comenzarán a imprimirse automáticamente las facturas de devolución.</p>
                             </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="cap12.png" alt="Ruta Transportista" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="cap12.png" alt="Ruta Transportista"></div>
                         </div>
                     </div>
                 `
@@ -546,89 +524,53 @@ const modulosData = {
                 contenido: `
                     <p>Sigue esta secuencia estándar en la terminal ZEBRA para procesar la entrada de mercadería de proveedores directos:</p>
 
-                    <!-- INFORMACIÓN ADICIONAL: EJEMPLO DE FACTURA -->
                     <div style="background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 10px; padding: 1.25rem; margin: 1rem 0 1.5rem 0;">
-                        <h4 style="color: #3730a3; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px;">
-                            📄 Referencia Visual: Lectura de Datos en Factura del Proveedor
-                        </h4>
-                        <p style="font-size: 0.9rem; color: #4338ca; margin-bottom: 1rem;">
-                            Utiliza la siguiente guía gráfica para identificar rápidamente los datos clave en el documento físico del proveedor antes de ingresarlos a la terminal ZEBRA:
-                        </p>
+                        <h4 style="color: #3730a3; margin-bottom: 0.5rem;">📄 Referencia Visual: Lectura de Datos en Factura del Proveedor</h4>
+                        <p style="font-size: 0.9rem; color: #4338ca; margin-bottom: 1rem;">Utiliza la siguiente guía gráfica para identificar rápidamente los datos clave en la factura del proveedor:</p>
                         
-                        <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
-                            <div style="flex: 1; min-width: 220px; max-width: 320px; text-align: center;">
-                                <img src="155.png" alt="Factura de Proveedor Marcada" style="width: 100%; border-radius: 8px; border: 1px solid #a5b4fc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                        <div class="tarjeta-paso">
+                            <div class="contenedor-img-paso">
+                                <img src="155.jpg" alt="Factura de Proveedor Marcada">
                             </div>
-                            <div style="flex: 1.2; min-width: 220px;">
+                            <div style="flex: 1;">
                                 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.92rem;">
-                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #0071ce; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                                        <strong style="color: #0071ce;">🟦 Color Azul:</strong> Número de Factura (ubicado en el recuadro superior derecho de la factura).
-                                    </li>
-                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #d00018; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                                        <strong style="color: #d00018;">🔴 Color Rojo:</strong> Orden de Compra (OC / PO) (ubicada en la sección de 'Documentos Referenciados').
-                                    </li>
-                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #7e22ce; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                                        <strong style="color: #7e22ce;">🟣 Color Morado:</strong> Código Item y Descripción de Productos (detalle de la mercadería enviada por el proveedor).
-                                    </li>
+                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #0071ce;"><strong style="color: #0071ce;">🟦 Color Azul:</strong> Número de Factura.</li>
+                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #d00018;"><strong style="color: #d00018;">🔴 Color Rojo:</strong> Orden de Compra (OC / PO).</li>
+                                    <li style="background: #ffffff; padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 5px solid #7e22ce;"><strong style="color: #7e22ce;">🟣 Color Morado:</strong> Código Item y Descripción.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
-                        <!-- PASO 1 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Ingreso a la App Recepción</h3>
-                                <p>En la pantalla de la terminal ZEBRA, seleccionar e ingresar a la aplicación <strong>App Recepción</strong>.</p>
-                            </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="IMG_1372.jpeg" alt="App Recepción" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                    <div class="flujo-pasos">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso"><h3>Ingreso a la App Recepción</h3><p>En la pantalla de la terminal ZEBRA, seleccionar e ingresar a la aplicación <strong>App Recepción</strong>.</p></div>
+                            <div class="contenedor-img-paso"><img src="IMG_1372.jpeg" alt="App Recepción"></div>
                         </div>
 
-                        <!-- PASO 2 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Selección de Recepción Directa</h3>
-                                <p>En el menú principal de la App Recibo, presionar la opción <strong>Recepción Directa</strong>.</p>
-                            </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="IMG_1373.jpeg" alt="Recepción Directa" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso"><h3>Selección de Recepción Directa</h3><p>En el menú principal de la App Recibo, presionar la opción <strong>Recepción Directa</strong>.</p></div>
+                            <div class="contenedor-img-paso"><img src="IMG_1373.jpeg" alt="Recepción Directa"></div>
                         </div>
 
-                        <!-- PASO 3 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Ingreso de Orden de Compra (OC) y Factura</h3>
-                                <p>Ingresar el número de <strong>Orden de Compra (PO / OC)</strong> impreso en la factura y confirmarlo. Luego, ingresar el número de <strong>Factura</strong> correspondiente.</p>
-                            </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="IMG_1375.jpeg" alt="Ingreso OC" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso"><h3>Ingreso de Orden de Compra (OC) y Factura</h3><p>Ingresar el número de <strong>Orden de Compra (PO / OC)</strong> impreso en la factura y confirmarlo. Luego, ingresar el número de <strong>Factura</strong> correspondiente.</p></div>
+                            <div class="contenedor-img-paso"><img src="IMG_1375.jpeg" alt="Ingreso OC"></div>
                         </div>
 
-                        <!-- PASO 4 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario);">Escaneo (Pistoleo) y Finalización</h3>
-                                <p>Comenzar el pistoleo de cada uno de los productos entregados por el proveedor. Cuando la cantidad coincida y todo esté verificado, presionar el botón <strong>Finalizar</strong> para cerrar la factura.</p>
-                                <div style="background: #e6f4ea; padding: 0.6rem 0.8rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem; color: #137333;">
-                                    📌 <strong>Nota:</strong> Si el proveedor trae múltiples documentos, repetir el mismo proceso desde el Paso 2 para cada factura adicional.
-                                </div>
-                            </div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso"><h3>Escaneo (Pistoleo) y Finalización</h3><p>Comenzar el pistoleo de cada uno de los productos entregados por el proveedor. Cuando la cantidad coincida y todo esté verificado, presionar el botón <strong>Finalizar</strong> para cerrar la factura.</p></div>
                         </div>
                     </div>
                 `
             },
             {
                 subtitulo: "Etapa 2: Control de Calidad y Cadena de Frío",
-                contenido: `<p><strong>Criterios de Aceptación y Rechazo:</strong></p><br><ul><li><strong>Productos Perecibles / Congelados:</strong> Controlar la temperatura del camión antes de descargar y verificar las fechas de vencimiento.</li></ul>`
+                contenido: `<p><strong>Criterios de Aceptación y Rechazo:</strong></p><br><ul><li><strong>Productos Perecibles / Congelados:</strong> Controlar la temperatura del camión antes de descargar y verificar las fechas de vencimiento.</li><li><strong>Cajas e Insumos:</strong> Rechazar embalajes aplastados, mojados o con muestras de plagas.</li><li><strong>Diferencias de Inventario:</strong> Si falta mercadería, realizar el ajuste en el sistema antes de firmar y timbrar la guía del chofer.</li></ul>`
             }
         ],
         preguntas: [
@@ -649,7 +591,7 @@ const modulosData = {
             }
         ]
     },
-  8: {
+    8: {
         titulo: "Módulo 8: Modulares - Sala",
         etapas: [
             {
@@ -661,60 +603,35 @@ const modulosData = {
                 contenido: `
                     <p>Sigue esta secuencia paso a paso en la terminal ZEBRA para visualizar e imprimir planogramas modulares:</p>
 
-                    <div class="flujo-pasos" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
-                        <!-- PASO 1 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">1</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Ingreso a la App Inventory Management</h3>
-                                <p>En la pantalla principal de la terminal ZEBRA, seleccionar e ingresar a la aplicación <strong>Inventory Management</strong>.</p>
-                            </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="Mod.png" alt="Inventory Management" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                    <div class="flujo-pasos">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso"><h3>Ingreso a la App Inventory Management</h3><p>En la pantalla principal de la terminal ZEBRA, seleccionar e ingresar a la aplicación <strong>Inventory Management</strong>.</p></div>
+                            <div class="contenedor-img-paso"><img src="Mod.png" alt="Inventory Management"></div>
                         </div>
 
-                        <!-- PASO 2 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">2</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Desplegar Menú Principal</h3>
-                                <p>Presionar las <strong>3 líneas</strong> (menú hamburguesa) ubicadas en la esquina superior izquierda de la pantalla.</p>
-                            </div>
-                            <div style="max-width: 140px; text-align: center;">
-                                <img src="mod1.png" alt="Piso de Venta Menú" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso"><h3>Desplegar Menú Principal</h3><p>Presionar las <strong>3 líneas</strong> (menú hamburguesa) ubicadas en la esquina superior izquierda de la pantalla.</p></div>
+                            <div class="contenedor-img-paso"><img src="mod1.png" alt="Piso de Venta Menú"></div>
                         </div>
 
-                        <!-- PASO 3 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">3</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Acceso a Modulares/Ub. Sala</h3>
-                                <p>En el panel lateral desplegado, seleccionar la opción <strong>Modulares/Ub. Sala</strong>.</p>
-                            </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="mod2.png" alt="Modulares Ub Sala" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso"><h3>Acceso a Modulares/Ub. Sala</h3><p>En el panel lateral desplegado, seleccionar la opción <strong>Modulares/Ub. Sala</strong>.</p></div>
+                            <div class="contenedor-img-paso"><img src="mod2.png" alt="Modulares Ub Sala"></div>
                         </div>
 
-                        <!-- PASO 4 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">4</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Seleccionar Modular</h3>
-                                <p>Dentro de la <strong>App Modulares</strong>, presionar sobre la sección <strong>Modular</strong>.</p>
-                            </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="mod3.png" alt="App Modulares Modular" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso"><h3>Seleccionar Modular</h3><p>Dentro de la <strong>App Modulares</strong>, presionar sobre la sección <strong>Modular</strong>.</p></div>
+                            <div class="contenedor-img-paso"><img src="mod3.png" alt="App Modulares Modular"></div>
                         </div>
 
-                        <!-- PASO 5 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">5</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.5rem; color: var(--color-primario); font-size: 1rem;">Pestañas de Estado de Modulares</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">5</div>
+                            <div class="contenido-paso">
+                                <h3>Pestañas de Estado de Modulares</h3>
                                 <p>En la parte superior encontraremos 3 opciones de estado importantes:</p>
                                 <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.92rem;">
                                     <li><strong style="color: #137333;">🟢 Listo / Tarde:</strong> Modulares listos para implementar en sala. <em style="color: #555;">Nota: Si nos pasamos de la fecha límite, quedarán marcados como "Tarde".</em></li>
@@ -722,24 +639,19 @@ const modulosData = {
                                     <li><strong style="color: #d97706;">🟠 Actual:</strong> Modulares vigentes que están en uso actualmente sin cambios activos.</li>
                                 </ul>
                             </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="mod4.png" alt="Pestañas de estado" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="mod4.png" alt="Pestañas de estado"></div>
                         </div>
 
-                        <!-- PASO 6 -->
-                        <div class="tarjeta-paso" style="display: flex; align-items: flex-start; gap: 1.25rem; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
-                            <div class="numero-paso" style="background-color: var(--color-secundario); color: #fff; font-weight: bold; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem;">6</div>
-                            <div class="contenido-paso" style="flex: 1;">
-                                <h3 style="margin-bottom: 0.3rem; color: var(--color-primario); font-size: 1rem;">Vista Detallada e Impresión</h3>
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">6</div>
+                            <div class="contenido-paso">
+                                <h3>Vista Detallada e Impresión</h3>
                                 <p>Al ingresar a un modular (por ejemplo, <em>2001 HAMBURGUESA</em>), se visualiza la estructura (como las 4 secciones/metros de extensión).</p>
                                 <div style="background: #eef2ff; border-left: 4px solid #0071ce; padding: 0.75rem; border-radius: 6px; margin-top: 0.6rem; font-size: 0.9rem; color: #1e40af;">
                                     💡 <strong>SUGERENCIA DE TRABAJO:</strong> Para trabajarlo de manera más cómoda en sala, se recomienda presionar el botón <strong>Imprimir</strong> y elegir <strong>Seleccionar documentos</strong>.
                                 </div>
                             </div>
-                            <div style="max-width: 120px; text-align: center;">
-                                <img src="mod5.png" alt="Vista Detallada Modular" style="width: 100%; border-radius: 6px; border: 1px solid #CBD5E1;">
-                            </div>
+                            <div class="contenedor-img-paso"><img src="mod5.png" alt="Vista Detallada Modular"></div>
                         </div>
                     </div>
                 `
@@ -794,7 +706,7 @@ const modulosData = {
         etapas: [
             {
                 subtitulo: "Etapa 1: Operación y Limpieza del Horno Dely",
-                contenido: `<p><strong>Procedimiento de Horno Dely (Comidas Preparadas / Polllos):</strong></p><ul><li><strong>Precalentamiento:</strong> Encender el equipo y seleccionar el programa predeterminado de cocción.</li><li><strong>Carga Segura:</strong> Utilizar guantes térmicos para alta temperatura al introducir o retirar las espadas/bandejas.</li><li><strong>Limpieza Diaria:</strong> Al finalizar la jornada, aplicar desengrasante grado alimenticio cuando el horno haya bajado de 40°C. Limpiar cristales y bandeja junta-grasa.</li></ul>`
+                contenido: `<p><strong>Procedimiento de Horno Dely (Comidas Preparadas / Pollos):</strong></p><ul><li><strong>Precalentamiento:</strong> Encender el equipo y seleccionar el programa predeterminado de cocción.</li><li><strong>Carga Segura:</strong> Utilizar guantes térmicos para alta temperatura al introducir o retirar las espadas/bandejas.</li><li><strong>Limpieza Diaria:</strong> Al finalizar la jornada, aplicar desengrasante grado alimenticio cuando el horno haya bajado de 40°C. Limpiar cristales y bandeja junta-grasa.</li></ul>`
             },
             {
                 subtitulo: "Etapa 2: Operación y Cuidado del Horno Panadería",
