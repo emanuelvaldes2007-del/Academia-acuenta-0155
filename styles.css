@@ -420,18 +420,23 @@ img {
 
 /* CRÉDITO DESARROLLADOR */
 .credito-desarrollador {
-    position: fixed;
-    bottom: 8px;
-    left: 12px;
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #666666;
-    z-index: 9999;
-    pointer-events: none;
-    user-select: none;
-    background: rgba(244, 246, 248, 0.8);
-    padding: 2px 6px;
-    border-radius: 4px;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    padding: 8px 15px !important;
+    font-size: 0.8rem !important;
+    color: #555555 !important;
+    border-top: 1px solid #e2e8f0 !important;
+    z-index: 99999 !important; /* Para que quede por encima de todo */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08) !important;
+    text-align: left;
+}
+
+/* Espacio al final de la página para que la barra no tape el contenido de abajo */
+body {
+    padding-bottom: 50px !important;
 }
 
 /* =========================================================

@@ -37,7 +37,7 @@ function cambiarUsuario() {
 }
 
 function actualizarProgresoGlobal() {
-    const total = 10;
+    const total = 11; // Actualizado a 11 módulos
     const completados = modulosCompletados.length;
     const porcentaje = Math.round((completados / total) * 100);
 
@@ -67,7 +67,22 @@ const modulosData = {
         etapas: [
             {
                 subtitulo: "Etapa 1: Pilares Institucionales y Principios Walmart",
-                contenido: `<p><strong>Nuestra Propuesta de Valor:</strong> En SuperBodega aCuenta ofrecemos los precios más bajos para las familias chilenas, manteniendo una operación eficiente, simple y segura bajo el respaldo global de Walmart.</p><br><p><strong>Los 4 Valores Fundamentales:</strong></p><ul><li><strong>Servicio al Cliente:</strong> Poner siempre al cliente en el centro de todas nuestras decisiones.</li><li><strong>Respeto por el Individuo:</strong> Escuchar, valorar la diversidad y promover un trato digno e inclusivo.</li><li><strong>Luchar por la Excelencia:</strong> Innovar, mantener estándares de calidad y superar nuestras metas operacionales.</li><li><strong>Actuar con Integridad:</strong> Ser honestos, transparentes y éticos en cada una de nuestras acciones.</li></ul>`
+                contenido: `
+                    <p><strong>Nuestra Propuesta de Valor:</strong> En SuperBodega aCuenta ofrecemos los precios más bajos para las familias chilenas, manteniendo una operación eficiente, simple y segura bajo el respaldo global de Walmart.</p><br>
+                    
+                    <p><strong>Los 4 Valores Fundamentales:</strong></p>
+                    <ul>
+                        <li><strong>Servicio al Cliente:</strong> Poner siempre al cliente en el centro de todas nuestras decisiones.</li>
+                        <li><strong>Respeto por el Individuo:</strong> Escuchar, valorar la diversidad y promover un trato digno e inclusivo.</li>
+                        <li><strong>Luchar por la Excelencia:</strong> Innovar, mantener estándares de calidad y superar nuestras metas operacionales.</li>
+                        <li><strong>Actuar con Integridad:</strong> Ser honestos, transparentes y éticos en cada una de nuestras acciones.</li>
+                    </ul>
+
+                    <!-- IMAGEN ACOMPAÑANTE VALORES -->
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <img src="valores.png" alt="Valores Walmart SuperBodega aCuenta" style="max-width: 320px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                    </div>
+                `
             },
             {
                 subtitulo: "Etapa 2: Reglas Cardinales de Servicio y Convivencia",
@@ -230,7 +245,22 @@ const modulosData = {
             },
             {
                 subtitulo: "Etapa 2: Verificación de Billetes y Detección de Falsificaciones (Método M.I.T.)",
-                contenido: `<p>Para prevenir el ingreso de dinero falso a la caja, es recomendable aplicar siempre el <strong>Método M.I.T. (Mirar, Inclinar y Tocar)</strong> al recibir pagos en efectivo:</p><br><ul><li><strong>M - MIRAR:</strong> Pon el billete contra la luz. Busca la marca de agua, el hilo de seguridad y el motivo complementario.</li><li><strong>I - INCLINAR:</strong> Mueve el billete suavemente frente a tus ojos para observar el cambio de color o la franja 3D.</li><li><strong>T - TOCAR:</strong> Pasa tus dedos por la superficie para sentir la textura áspera y el relieve.</li></ul>`
+                contenido: `
+                    <p>Para prevenir el ingreso de dinero falso a la caja, es recomendable aplicar siempre el <strong>Método M.I.T. (Mirar, Inclinar y Tocar)</strong> al recibir pagos en efectivo:</p><br>
+                    
+                    <ul>
+                        <li><strong>M - MIRAR:</strong> Pon el billete contra la luz. Busca la marca de agua, el hilo de seguridad y el motivo complementario.</li>
+                        <li><strong>I - INCLINAR:</strong> Mueve el billete suavemente frente a tus ojos para observar el cambio de color o la franja 3D.</li>
+                        <li><strong>T - TOCAR:</strong> Pasa tus dedos por la superficie para sentir la textura áspera y el relieve.</li>
+                    </ul>
+
+                    <p style="margin-top: 1.5rem; font-weight: 600;">Referencia Visual de Verificación de Billetes:</p>
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+                        <img src="billete1.png" alt="Verificación de Billete 1" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
+                        <img src="billete2.png" alt="Verificación de Billete 2" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
+                        <img src="billete3.png" alt="Verificación de Billete 3" style="max-width: 31%; height: auto; border-radius: 6px; border: 1px solid #ccc;">
+                    </div>
+                `
             }
         ],
         preguntas: [
@@ -318,7 +348,6 @@ const modulosData = {
                     <p style="margin-top: 1.2rem;">Sigue este flujo operativo en la terminal ZEBRA para realizar el ajuste de inventario de forma correcta:</p>
 
                     <div class="flujo-pasos">
-                        <!-- PASO 1 -->
                         <div class="tarjeta-paso">
                             <div class="numero-paso">1</div>
                             <div class="contenido-paso">
@@ -330,7 +359,6 @@ const modulosData = {
                             </div>
                         </div>
 
-                        <!-- PASO 2 -->
                         <div class="tarjeta-paso">
                             <div class="numero-paso">2</div>
                             <div class="contenido-paso">
@@ -342,7 +370,6 @@ const modulosData = {
                             </div>
                         </div>
 
-                        <!-- PASO 3 -->
                         <div class="tarjeta-paso">
                             <div class="numero-paso">3</div>
                             <div class="contenido-paso">
@@ -354,7 +381,6 @@ const modulosData = {
                             </div>
                         </div>
 
-                        <!-- PASO 4 -->
                         <div class="tarjeta-paso">
                             <div class="numero-paso">4</div>
                             <div class="contenido-paso">
@@ -370,13 +396,12 @@ const modulosData = {
                             </div>
                         </div>
 
-                        <!-- PASO 5 -->
                         <div class="tarjeta-paso">
                             <div class="numero-paso">5</div>
                             <div class="contenido-paso">
                                 <h3>Cierre y Finalización de Ajuste (F10)</h3>
                                 <p>Luego de ingresar la cantidad física a ajustar, presionar la tecla <strong>F10</strong> para finalizar. Se imprimirá un reporte físico del ajuste.</p>
-                                <p style="margin-top: 0.4rem; color: #d00018; font-weight: 600;">⚠️️ Para dar por finalizado por completo el proceso, se debe ingresar nuevamente a la sección de ajuste de dptos. múltiples y presionar F10 otra vez.</p>
+                                <p style="margin-top: 0.4rem; color: #d00018; font-weight: 600;">⚠ Para dar por finalizado por completo el proceso, se debe ingresar nuevamente a la sección de ajuste de dptos. múltiples y presionar F10 otra vez.</p>
                             </div>
                         </div>
                     </div>
@@ -551,8 +576,8 @@ const modulosData = {
 
                         <div class="tarjeta-paso">
                             <div class="numero-paso">2</div>
-                            <div class="contenido-paso"><h3>Selección de Recepción Directa</h3><p>En el menú principal de la App Recibo, presionar la opción <strong>Recepción Directa</strong>.</p></div>
-                            <div class="contenedor-img-paso"><img src="IMG_1373.jpeg" alt="Recepción Directa"></div>
+                            <div class="contenido-paso"><h3>Selección de Recepción Directa</h3><p>En el menú principal de la App Recibo, presionar la opción <strong>Comenzar Recepción </strong>.</p></div>
+                            <div class="contenedor-img-paso"><img src="IMG_1373.jpeg" alt="Comenzar Recepción"></div>
                         </div>
 
                         <div class="tarjeta-paso">
@@ -705,16 +730,57 @@ const modulosData = {
         titulo: "Módulo 10: Mantenimiento Operacional de Sala",
         etapas: [
             {
-                subtitulo: "Etapa 1: Operación y Limpieza del Horno Dely",
-                contenido: `<p><strong>Procedimiento de Horno Dely (Comidas Preparadas / Pollos):</strong></p><ul><li><strong>Precalentamiento:</strong> Encender el equipo y seleccionar el programa predeterminado de cocción.</li><li><strong>Carga Segura:</strong> Utilizar guantes térmicos para alta temperatura al introducir o retirar las espadas/bandejas.</li><li><strong>Limpieza Diaria:</strong> Al finalizar la jornada, aplicar desengrasante grado alimenticio cuando el horno haya bajado de 40°C. Limpiar cristales y bandeja junta-grasa.</li></ul>`
+                subtitulo: "Etapa 1: Uso de Horno Dely",
+                contenido: `
+                    <p><strong>Operación, Uso y Limpieza del Horno Dely:</strong></p>
+                    <p>Revisa atentamente el siguiente video explicativo sobre el procedimiento correcto de uso y operación del horno Dely:</p>
+                    
+                    <!-- REPRODUCTOR DE VIDEO LOCAL -->
+                    <div style="max-width: 100%; margin: 1rem 0; text-align: center;">
+                        <video controls style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                            <source src="horno_dely.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+
+                    <ul style="margin-top: 1rem;">
+                        <li><strong>Precalentamiento:</strong> Encender el equipo y seleccionar el programa predeterminado de cocción.</li>
+                        <li><strong>Carga Segura:</strong> Utilizar guantes térmicos para alta temperatura al introducir o retirar las espadas/bandejas.</li>
+                        <li><strong>Limpieza Diaria:</strong> Al finalizar la jornada, aplicar desengrasante grado alimenticio cuando el horno haya bajado de 40°C. Limpiar cristales y bandeja junta-grasa.</li>
+                    </ul>
+                `
             },
             {
-                subtitulo: "Etapa 2: Operación y Cuidado del Horno Panadería",
-                contenido: `<p><strong>Procedimiento de Horno Panadería:</strong></p><ul><li><strong>Inyección de Vapor:</strong> Verificar que la llave de agua de suministro esté abierta antes de iniciar el ciclo.</li><li><strong>Carga de Carros:</strong> Asegurar los carros de bandejas en el enganche superior/inferior antes de cerrar la puerta.</li><li><strong>Seguridad:</strong> Nunca abrir la puerta de golpe durante la inyección de vapor para evitar quemaduras por vapor caliente.</li></ul>`
+                subtitulo: "Etapa 2: Uso y Arreglo de Balanza de Carnicería",
+                contenido: `
+                    <p><strong>Fallas Comunes y Soluciones Operacionales:</strong></p>
+                    <ol style="margin-bottom: 1.5rem; line-height: 1.6;">
+                        <li><strong>La balanza no imprime etiquetas:</strong> Verificar que el rollo esté colocado correctamente y el cabezal térmico esté limpio y cerrado.</li>
+                        <li><strong>Desviación en el peso (Descalibración):</strong> Asegúrese de que no haya objetos tocando el plato y realice un reinicio de la balanza apagándola y encendiéndola de nuevo.</li>
+                        <li><strong>Error de comunicación con el sistema:</strong> Revise que el cable de red ethernet esté bien conectado en la parte posterior del equipo.</li>
+                    </ol>
+
+                    <p><strong>Video Instructivo - Uso y Cambio de Rollo:</strong></p>
+                    <div style="max-width: 100%; margin: 1rem 0; text-align: center;">
+                        <video controls style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                            <source src="balanza_carniceria.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                `
             },
             {
-                subtitulo: "Etapa 3: Arreglo, Calibración y Cuidado de Balanza Dely",
-                contenido: `<p><strong>Procedimiento y Mantenimiento de Balanza Dely:</strong></p><ol><li><strong>Nivelación y Puesta a Cero:</strong> Verificar que la burbuja de nivelación esté centrada en la base de la balanza. Presionar la tecla <em>ZERO / TARA</em> si marca valores erróneos en vacío.</li><li><strong>Limpieza de Cabezal Térmico:</strong> Desconectar la balanza y limpiar suavemente el cabezal de impresión con un cotón impregnado en alcohol isopropílico para evitar stickers borrosos.</li><li><strong>Cambio de Rollo de Etiquetas:</strong> Colocar el rollo respetando la guía de paso del papel para prevenir atascos de cinta.</li></ol>`
+                subtitulo: "Etapa 3: Arreglar Balanza de Dely",
+                contenido: `
+                    <p>Aquí mostramos el video paso a paso para arreglar la balanza:</p>
+                    
+                    <div style="max-width: 100%; margin: 1rem 0; text-align: center;">
+                        <video controls style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                            <source src="balanza_dely1.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                `
             }
         ],
         preguntas: [
@@ -724,14 +790,447 @@ const modulosData = {
                 correcta: 1
             },
             {
-                enunciado: "Al abrir la puerta del Horno de Panadería durante el proceso de horneado con inyección de vapor, ¿qué medida de precaución de seguridad se debe tomar?",
-                opciones: ["Abrir de golpe y meter la cara para revisar el pan.", "Abrir entreabierta la puerta unos segundos para que escape el vapor acumulado antes de abrir del todo.", "Apagar la luz de la sala.", "Soplar la puerta del horno."],
-                correcta: 1
-            },
-            {
                 enunciado: "¿En qué momento se debe realizar la limpieza profunda con desengrasante del Horno Dely?",
                 opciones: ["Con el horno encendido a máxima temperatura.", "Al finalizar el turno, cuando la temperatura interna haya bajado a un nivel seguro (menos de 40°C).", "Una vez al mes únicamente.", "Mientras los pollos se están cocinando."],
                 correcta: 1
+            },
+            {
+                enunciado: "Si la balanza de carnicería presenta un error de comunicación con el sistema, ¿qué se debe revisar primero?",
+                opciones: ["Que el cable de red ethernet esté bien conectado en la parte posterior.", "Cambiar la pantalla táctil.", "Llamar al chofer del camión.", "Cambiar la balanza de mesa."],
+                correcta: 0
+            }
+        ]
+    },
+    11: {
+        titulo: "Módulo 11: Seguridad Alimentaria - Refresh y Descongelamiento",
+        esEspecialSeguridad: true,
+        headerInfo: {
+            subtitulo: "SEGURIDAD ALIMENTARIA · REFORZAMIENTO Nº 06/2026",
+            titulo: "Refresh y Descongelamiento",
+            kpis: [
+                { valor: "-18°C", label: "TEMP. CONGELACIÓN" },
+                { valor: "2", label: "PROCESOS DISTINTOS" },
+                { valor: "R-21", label: "FORMULARIO CLAVE" },
+                { valor: "0", label: "VECES SE RECONGELAN" }
+            ]
+        },
+        pestanas: [
+            {
+                id: "conceptos",
+                nombre: "📋 Conceptos",
+                contenido: `
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">R</span>
+                            Mapa de Responsabilidades
+                        </h3>
+                        <div style="text-align: center; margin: 1.5rem 0;">
+                            <div style="background: #0284c7; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; display: inline-block;">Gerente / Jefe de Tienda</div>
+                            <div style="width: 2px; height: 15px; background: #94a3b8; margin: 0 auto;"></div>
+                            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                                <div style="background: #f1f5f9; border: 1px solid #0284c7; padding: 8px 15px; border-radius: 6px; font-weight: 600; color: #334155;">Subgerente</div>
+                                <div style="background: #f1f5f9; border: 1px solid #0284c7; padding: 8px 15px; border-radius: 6px; font-weight: 600; color: #334155;">Jefe de Área</div>
+                                <div style="background: #f1f5f9; border: 1px solid #0284c7; padding: 8px 15px; border-radius: 6px; font-weight: 600; color: #334155;">Responsable Turno</div>
+                            </div>
+                        </div>
+                        <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 1rem; border-radius: 4px; color: #1e293b; font-size: 0.92rem;">
+                            Todos los niveles son responsables de garantizar el correcto proceso de descongelación para <strong>evitar riesgo de inocuidad</strong> en los productos.
+                        </div>
+                    </div>
+
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1.2rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">?</span>
+                            Refresh vs Descongelamiento
+                        </h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: #0c4a6e; color: white; border-radius: 8px; padding: 1.2rem;">
+                                <div style="font-size: 0.8rem; text-transform: uppercase; opacity: 0.8; font-weight: bold;">PROCESO 1</div>
+                                <h4 style="font-size: 1.3rem; margin: 0.2rem 0 1rem 0; color: #ffffff;">REFRESH</h4>
+                                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-size: 0.92rem;">
+                                    <li>› <strong>Producto listo para venta directa</strong></li>
+                                    <li>› Cámara refrigerada o T° amb. según producto</li>
+                                    <li>› Fecha: según ficha del producto</li>
+                                    <li>› <em>Ejemplos: tortas, pasteles, pan granel</em></li>
+                                </ul>
+                            </div>
+                            <div style="background: #15803d; color: white; border-radius: 8px; padding: 1.2rem;">
+                                <div style="font-size: 0.8rem; text-transform: uppercase; opacity: 0.8; font-weight: bold;">PROCESO 2</div>
+                                <h4 style="font-size: 1.3rem; margin: 0.2rem 0 1rem 0; color: #ffffff;">DESCONGELAMIENTO</h4>
+                                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-size: 0.92rem;">
+                                    <li>› <strong>Materia prima para cocción posterior</strong></li>
+                                    <li>› SIEMPRE en cámara refrigerada</li>
+                                    <li>› Fecha: según etiqueta del proveedor</li>
+                                    <li>› <em>Ejemplos: pan hamburguesa, hot dog</em></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+                            <thead>
+                                <tr style="background: #0284c7; color: white;">
+                                    <th style="padding: 10px; border-radius: 6px 0 0 0;">Característica</th>
+                                    <th style="padding: 10px;">Refresh</th>
+                                    <th style="padding: 10px; border-radius: 0 6px 0 0;">Descongelamiento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #e2e8f0;">
+                                    <td style="padding: 10px; font-weight: bold; color: #334155;">Destino final</td>
+                                    <td style="padding: 10px;">Venta directa al cliente</td>
+                                    <td style="padding: 10px;">Proceso posterior (cocción)</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+                                    <td style="padding: 10px; font-weight: bold; color: #334155;">Lugar</td>
+                                    <td style="padding: 10px;">Cámara o T° ambiente</td>
+                                    <td style="padding: 10px;">SIEMPRE en cámara refrigerada</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; font-weight: bold; color: #334155;">Registro R-21</td>
+                                    <td style="padding: 10px; color: #16a34a; font-weight: bold;">✔ Obligatorio</td>
+                                    <td style="padding: 10px; color: #16a34a; font-weight: bold;">✔ Obligatorio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1.2rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">Z</span>
+                            Zona Refresh Correcta en Cámara
+                        </h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+                            <div style="border: 1px solid #0284c7; background: #f0f9ff; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #0284c7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">C</div>
+                                <h5 style="margin: 0 0 6px 0; color: #0369a1; font-size: 1rem;">Cartel visible</h5>
+                                <p style="font-size: 0.85rem; color: #475569; margin: 0;">Letrero "ZONA REFRESH" visible y bien ubicado en todo momento.</p>
+                            </div>
+                            <div style="border: 1px solid #16a34a; background: #f0fdf4; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #16a34a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">S</div>
+                                <h5 style="margin: 0 0 6px 0; color: #15803d; font-size: 1rem;">Separación por tipo</h5>
+                                <p style="font-size: 0.85rem; color: #475569; margin: 0;">Productos separados: Hamburguesa / Hot Dog / Tortas.</p>
+                            </div>
+                            <div style="border: 1px solid #d97706; background: #fffbeb; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #d97706; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">F</div>
+                                <h5 style="margin: 0 0 6px 0; color: #b45309; font-size: 1rem;">Fecha en cada bandeja</h5>
+                                <p style="font-size: 0.85rem; color: #475569; margin: 0;">Cada bandeja con etiqueta de fecha de descongelación visible.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "refresh",
+                nombre: "❄ Refresh",
+                contenido: `
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">1</span>
+                            Proceso Refresh — Tortas y Pan — Paso a Paso
+                        </h3>
+
+                        <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 0.8rem 1rem; border-radius: 4px; font-weight: 600; color: #b45309; margin-bottom: 1.5rem; font-size: 0.9rem;">
+                            ⚠️ Seguir estos pasos en orden. Cada uno es obligatorio.
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">1</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Recibir producto congelado</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Verificar estado y temperatura <strong>-18°C</strong>. No aceptar productos parcialmente descongelados.</p>
+                            </div>
+                            <div style="text-align: center; color: #0284c7; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">2</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Trasladar a zona refrigerada señalizada</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Cámara de refrigeración con cartel <strong>ZONA REFRESH</strong> visible y correctamente identificada.</p>
+                            </div>
+                            <div style="text-align: center; color: #0284c7; font-weight: bold;">↓</div>
+
+                            <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #d97706; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">3</span>
+                                    <h4 style="margin: 0; color: #b45309;">⚠️ INMEDIATAMENTE: Marcar fecha de inicio</h4>
+                                </div>
+                                <p style="margin: 0 0 10px 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">La fecha rige desde que el producto entra a la cámara.</p>
+                                <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-left: 36px;">
+                                    <div style="background: #e0f2fe; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; color: #0369a1;"><strong>Con calendario en etiqueta:</strong> marcar en etiqueta original</div>
+                                    <div style="background: #fef3c7; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; color: #b45309;"><strong>Sin calendario:</strong> colocar cartel con fecha de inicio</div>
+                                </div>
+                            </div>
+                            <div style="text-align: center; color: #0284c7; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">4</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Completar 1ª parte Registro FOOD SAFETY-R-21</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Producto, marca, cantidad, lote, vencimiento congelado, fecha ingreso, temperatura inicio, responsable.</p>
+                            </div>
+                            <div style="text-align: center; color: #0284c7; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">5</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Controlar permanencia en cámara</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Tortas y pasteles: cámara refrigerada. Panes (según producto): pueden ir a temperatura ambiente para venta a granel.</p>
+                            </div>
+                            <div style="text-align: center; color: #0284c7; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">6</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Completar 2ª parte Registro al término</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">T° del producto, T° primera medición, vencimiento descongelado, evaluación sensorial, acción correctiva si aplica.</p>
+                            </div>
+                            <div style="text-align: center; color: #16a34a; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                    <span style="background: #16a34a; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">7</span>
+                                    <h4 style="margin: 0; color: #15803d;">✔ Producto listo para venta</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Reponer en vitrina o área de venta a granel.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "descongelamiento",
+                nombre: "🔪 Descongelamiento",
+                contenido: `
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 0.8rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">2</span>
+                            Proceso Descongelamiento — Pan para Cocción
+                        </h3>
+
+                        <div style="background: #f0f9ff; border-left: 4px solid #0284c7; padding: 0.8rem 1rem; border-radius: 4px; color: #0369a1; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.9rem;">
+                            Aplica para materias primas (pan congelado) que serán horneadas o cocinadas posteriormente.
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">1</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Recibir materia prima congelada</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Pan hamburguesa, hot dog, etc. Verificar condiciones de congelación a <strong>-18°C</strong>.</p>
+                            </div>
+                            <div style="text-align: center; color: #d97706; font-weight: bold;">↓</div>
+
+                            <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                                    <span style="background: #d97706; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">2</span>
+                                    <h4 style="margin: 0; color: #b45309;">⚠️ Trasladar SIEMPRE a cámara refrigerada</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">NUNCA a temperatura ambiente. El descongelamiento de materias primas para cocción siempre debe hacerse en frío.</p>
+                            </div>
+                            <div style="text-align: center; color: #d97706; font-weight: bold;">↓</div>
+
+                            <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                                    <span style="background: #d97706; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">3</span>
+                                    <h4 style="margin: 0; color: #b45309;">⚠️ Señalizar zona y marcar fecha en producto</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Zona con cartel de identificación | Fecha de ingreso a cámara en etiqueta.</p>
+                            </div>
+                            <div style="text-align: center; color: #0284c7; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                                    <span style="background: #0284c7; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">4</span>
+                                    <h4 style="margin: 0; color: #0369a1;">Completar 1ª parte Registro FOOD SAFETY-R-21</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Al inicio. No olvidar registrar nombre del responsable.</p>
+                            </div>
+                            <div style="text-align: center; color: #16a34a; font-weight: bold;">↓</div>
+
+                            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                                    <span style="background: #16a34a; color: white; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">5</span>
+                                    <h4 style="margin: 0; color: #15803d;">✔ Llevar a cocción + cerrar Registro</h4>
+                                </div>
+                                <p style="margin: 0; font-size: 0.9rem; color: #334155; padding-left: 36px;">Completar 2da parte del Registro. El pan está listo para horneado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1.2rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">?</span>
+                            Árbol de Decisión — Permanencia en Cámara
+                        </h3>
+
+                        <div style="background: #0284c7; color: white; padding: 12px; border-radius: 8px; text-align: center; font-weight: bold; margin-bottom: 1rem;">
+                            ¿El proveedor indica vida útil una vez descongelado el producto?
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="text-align: center;">
+                                <div style="border: 2px solid #16a34a; color: #16a34a; padding: 6px 15px; border-radius: 20px; font-weight: bold; display: inline-block; margin-bottom: 8px;">SÍ indica</div>
+                                <div style="font-size: 1.2rem; color: #64748b;">↓</div>
+                                <div style="background: #f0fdf4; border: 1px solid #16a34a; border-radius: 8px; padding: 1rem; color: #15803d; font-weight: 600; font-size: 0.9rem;">
+                                    Respetar la fecha que indica la etiqueta del proveedor
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="border: 2px solid #ef4444; color: #ef4444; padding: 6px 15px; border-radius: 20px; font-weight: bold; display: inline-block; margin-bottom: 8px;">NO indica</div>
+                                <div style="font-size: 1.2rem; color: #64748b;">↓</div>
+                                <div style="background: #fef2f2; border: 1px solid #ef4444; border-radius: 8px; padding: 1rem; color: #b91c1c; font-weight: 600; font-size: 0.9rem;">
+                                    Solo para producción del día. NO dejar para el día siguiente.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 1rem; border-radius: 4px; color: #991b1b; font-weight: bold; font-size: 0.92rem;">
+                            🚫 Un producto descongelado NO vuelve a congelarse JAMÁS.
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "trazabilidad",
+                nombre: "📁 Trazabilidad",
+                contenido: `
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1.2rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">F</span>
+                            Formulario FOOD SAFETY-R-21 (Ejemplo Real)
+                        </h3>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; align-items: start;">
+                            <div style="text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; background: #f8fafc;">
+                                <img src="formulario1.png" alt="Formulario FOOD SAFETY R-21" style="max-width: 100%; height: auto; border-radius: 6px;">
+                            </div>
+                            <div>
+                                <h4 style="margin: 0 0 10px 0; color: #0284c7;">Registro de Refresh y Descongelamiento</h4>
+                                <p style="font-size: 0.9rem; color: #334155; line-height: 1.5;">El formulario <strong>FOOD SAFETY-R-21</strong> es el documento oficial y obligatorio para registrar el ciclo completo de descongelación de cualquier producto alimentario en la tienda.</p>
+                                
+                                <div style="background: #f1f5f9; padding: 10px; border-radius: 6px; margin: 10px 0; font-size: 0.88rem; color: #334155;">
+                                    <p style="margin: 0 0 6px 0;"><strong>Parte 1 (Al inicio):</strong> Registra nombre del producto, lote, cantidad, temperatura de inicio (-18°C) y el colaborador responsable.</p>
+                                    <p style="margin: 0;"><strong>Parte 2 (Al término):</strong> Registra las mediciones de temperatura finales, vencimiento calculado para descongelado y evaluación sensorial.</p>
+                                </div>
+
+                                <div style="background: #fffbeb; border: 1px solid #fde68a; padding: 10px; border-radius: 6px; font-size: 0.88rem; color: #b45309;">
+                                    💡 <strong>Recordatorio Crítico:</strong> Los datos deben ingresarse en el momento exacto en que ocurren los eventos (ingreso a cámara y egreso). No se permite el llenado extemporáneo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <h3 style="color: #1e3a8a; display: flex; align-items: center; gap: 8px; margin-bottom: 1.2rem;">
+                            <span style="background: #0284c7; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">L</span>
+                            Libro de Trazabilidad (Ejemplo Real)
+                        </h3>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; align-items: start;">
+                            <div style="text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; background: #f8fafc;">
+                                <img src="trazabilidad.png" alt="Libro de Trazabilidad Real" style="max-width: 100%; max-height: 400px; height: auto; border-radius: 6px;">
+                            </div>
+                            <div>
+                                <h4 style="margin: 0 0 10px 0; color: #0284c7;">Respaldo Físico de Etiquetas de Origen</h4>
+                                <p style="font-size: 0.9rem; color: #334155; line-height: 1.5;">El Libro de Trazabilidad respalda de forma física la procedencia y lote de cada producto elaborado.</p>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0;">
+                                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px; border-radius: 6px; font-size: 0.85rem;">
+                                        <strong style="color: #0369a1;">Caso 1: Bandeja Completa</strong>
+                                        <p style="margin: 4px 0 0 0; color: #475569;">Rescata la etiqueta original del envase, pégala en el libro y anota responsable, turno y fecha de reposición.</p>
+                                    </div>
+                                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px; border-radius: 6px; font-size: 0.85rem;">
+                                        <strong style="color: #0369a1;">Caso 2: Bandeja Parcial</strong>
+                                        <p style="margin: 4px 0 0 0; color: #475569;">Mantén la etiqueta original en lo que queda de la bandeja en cámara, y escribe <em>"etiqueta en cámara"</em> con los datos de lote/vencimiento.</p>
+                                    </div>
+                                </div>
+
+                                <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 10px; border-radius: 4px; font-size: 0.88rem; color: #991b1b; font-weight: 600;">
+                                    ⚠️ Punto Clave de Auditoría: La ausencia de etiquetas de origen correspondientes a los lotes en exhibición o preparación constituye una falta grave a las normas de Food Safety.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.5rem;">
+                        <h3 style="color: #dc2626; display: flex; align-items: center; gap: 8px; margin-bottom: 1.2rem;">
+                            <span style="background: #dc2626; color: white; border-radius: 6px; padding: 2px 8px; font-size: 0.9rem;">!</span>
+                            Puntos SIEMPRE Obligatorios
+                        </h3>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                            <div style="border: 1px solid #0284c7; background: #f0f9ff; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #0284c7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">C</div>
+                                <strong style="color: #0369a1; font-size: 0.9rem;">Cartel visible</strong>
+                                <p style="font-size: 0.8rem; color: #475569; margin: 4px 0 0 0;">Zona refresh con cartel visible en todo momento.</p>
+                            </div>
+                            <div style="border: 1px solid #d97706; background: #fffbeb; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #d97706; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">F</div>
+                                <strong style="color: #b45309; font-size: 0.9rem;">Fecha inmediata</strong>
+                                <p style="font-size: 0.8rem; color: #475569; margin: 4px 0 0 0;">Marcar la fecha de inicio en el momento exacto que entra a cámara.</p>
+                            </div>
+                            <div style="border: 1px solid #ef4444; background: #fef2f2; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #ef4444; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">N</div>
+                                <strong style="color: #b91c1c; font-size: 0.9rem;">No recongelar</strong>
+                                <p style="font-size: 0.8rem; color: #475569; margin: 4px 0 0 0;">Un producto descongelado NO vuelve a congelarse JAMÁS.</p>
+                            </div>
+                            <div style="border: 1px solid #16a34a; background: #f0fdf4; border-radius: 8px; padding: 1rem; text-align: center;">
+                                <div style="width: 35px; height: 35px; background: #16a34a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 8px auto;">SP</div>
+                                <strong style="color: #15803d; font-size: 0.9rem;">SharePoint</strong>
+                                <p style="font-size: 0.8rem; color: #475569; margin: 4px 0 0 0;">Info publicada en la Biblioteca de Seguridad Alimentaria.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        ],
+        preguntas: [
+            {
+                enunciado: "¿Cuál es la principal diferencia entre el proceso REFRESH y el proceso DESCONGELAMIENTO?",
+                opciones: [
+                    "El Refresh es para productos congelados y el Descongelamiento para verduras.",
+                    "El Refresh es para productos de venta directa al cliente y el Descongelamiento es para materias primas de cocción posterior.",
+                    "El Refresh no requiere registro en formulario R-21.",
+                    "El Descongelamiento se hace a temperatura ambiente."
+                ],
+                correcta: 1
+            },
+            {
+                enunciado: "¿En qué momento exacto se debe marcar la fecha de inicio de descongelación en el producto?",
+                opciones: [
+                    "Al finalizar el turno de la tarde.",
+                    "Al día siguiente cuando empiece a hornearse.",
+                    "Inmediatamente en el momento en que el producto entra a la cámara refrigerada.",
+                    "Solo cuando el cliente pregunte por la fecha."
+                ],
+                correcta: 2
+            },
+            {
+                enunciado: "Si un producto descongelado sobra al final del turno, ¿se puede volver a congelar en la cámara?",
+                opciones: [
+                    "Sí, si se envuelve en alusa foil.",
+                    "Sí, pero solo por 24 horas máximo.",
+                    "NO, un producto descongelado jamás vuelve a congelarse.",
+                    "Solo si el Jefe de Local lo autoriza."
+                ],
+                correcta: 2
+            },
+            {
+                enunciado: "¿Cuál es el formulario oficial obligatorio para registrar el ciclo de descongelación?",
+                opciones: [
+                    "FOOD SAFETY-R-21",
+                    "Ajuste SMART F5",
+                    "Reporte NSG 96%",
+                    "Guía de Recepción Directa"
+                ],
+                correcta: 0
             }
         ]
     }
@@ -739,10 +1238,12 @@ const modulosData = {
 
 let moduloActualId = null;
 let etapaActualIdx = 0;
+let pestanaActualIdx = 0;
 
 function abrirModulo(id) {
     moduloActualId = id;
     etapaActualIdx = 0;
+    pestanaActualIdx = 0;
     const vMenu = document.getElementById('vista-menu');
     if (vMenu) vMenu.style.display = 'none';
 
@@ -753,10 +1254,86 @@ function abrirModulo(id) {
     }
 }
 
+function cambiarPestanaEspecial(idx) {
+    pestanaActualIdx = idx;
+    renderizarEtapa();
+}
+
 function renderizarEtapa() {
     const mod = modulosData[moduloActualId];
     const contenedor = document.getElementById('vista-modulo-pagina');
     if (!contenedor) return;
+
+    if (mod.esEspecialSeguridad) {
+        if (pestanaActualIdx < mod.pestanas.length) {
+            const pestanaActiva = mod.pestanas[pestanaActualIdx];
+            
+            let html = `
+                <div class="contenedor-pantalla-nueva">
+                    <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                        <div style="font-size: 0.8rem; letter-spacing: 1px; color: #93c5fd; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">
+                            ${mod.headerInfo.subtitulo}
+                        </div>
+                        <h1 style="margin: 0 0 1.2rem 0; font-size: 1.8rem; color: #ffffff;">${mod.headerInfo.titulo}</h1>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1rem;">
+                            ${mod.headerInfo.kpis.map(kpi => `
+                                <div style="text-align: center; background: rgba(255,255,255,0.07); padding: 8px; border-radius: 8px;">
+                                    <div style="font-size: 1.4rem; font-weight: 800; color: #facc15;">${kpi.valor}</div>
+                                    <div style="font-size: 0.68rem; text-transform: uppercase; color: #e2e8f0; font-weight: 600;">${kpi.label}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 8px; overflow-x: auto; border-bottom: 2px solid #e2e8f0; margin-bottom: 1.5rem; padding-bottom: 4px;">
+                        ${mod.pestanas.map((p, idx) => `
+                            <button onclick="cambiarPestanaEspecial(${idx})" style="
+                                padding: 10px 16px; 
+                                border: none; 
+                                background: ${idx === pestanaActualIdx ? '#0284c7' : 'transparent'}; 
+                                color: ${idx === pestanaActualIdx ? 'white' : '#64748b'}; 
+                                font-weight: bold; 
+                                border-radius: 6px 6px 0 0; 
+                                cursor: pointer; 
+                                font-size: 0.9rem;
+                                white-space: nowrap;
+                                transition: all 0.2s;
+                            ">
+                                ${p.nombre}
+                            </button>
+                        `).join('')}
+                        <button onclick="cambiarPestanaEspecial(${mod.pestanas.length})" style="
+                            padding: 10px 16px; 
+                            border: none; 
+                            background: ${pestanaActualIdx === mod.pestanas.length ? '#16a34a' : 'transparent'}; 
+                            color: ${pestanaActualIdx === mod.pestanas.length ? 'white' : '#16a34a'}; 
+                            font-weight: bold; 
+                            border-radius: 6px 6px 0 0; 
+                            cursor: pointer; 
+                            font-size: 0.9rem;
+                            white-space: nowrap;
+                        ">
+                            🧩 Quiz Evaluativo
+                        </button>
+                    </div>
+
+                    <div style="line-height: 1.6;">
+                        ${pestanaActiva.contenido}
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd;">
+                        <button class="btn-volver-menu" onclick="volverAlMenu()">← Volver al Menú</button>
+                        <button class="btn-acuenta" onclick="cambiarPestanaEspecial(${pestanaActualIdx + 1})">Siguiente Pestaña ➔</button>
+                    </div>
+                </div>
+            `;
+            contenedor.innerHTML = html;
+        } else {
+            renderizarEvaluacion();
+        }
+        return;
+    }
 
     if (etapaActualIdx < mod.etapas.length) {
         const etapa = mod.etapas[etapaActualIdx];

@@ -53,7 +53,7 @@
             <section class="tarjeta-progreso-global">
                 <div class="info-progreso">
                     <h3>Tu Progreso General</h3>
-                    <span id="texto-progreso">0 de 10 Módulos completados (0%)</span>
+                    <span id="texto-progreso">0 de 11 Módulos completados (0%)</span>
                 </div>
                 <div class="contenedor-barra">
                     <div id="barra-progreso" class="barra-relleno" style="width: 0%;"></div>
@@ -161,6 +161,16 @@
                     <h3>🛠️ MANTENIMIENTO</h3>
                     <p>Operación segura de Hornos Dely y Panadería, y procedimiento técnico para balanza Dely.</p>
                 </div>
+
+                <!-- MÓDULO 11 -->
+                <div class="tarjeta-modulo" onclick="abrirModulo(11)">
+                    <div class="tarjeta-header">
+                        <span class="badge-modulo">Módulo 11</span>
+                        <span id="badge-11" class="badge-estado pendiente">Pendiente</span>
+                    </div>
+                    <h3>🛡️ SEGURIDAD ALIMENTARIA</h3>
+                    <p>Refresh, Descongelamiento, Puntos Críticos de Control, Registro R-21 y Libro de Trazabilidad.</p>
+                </div>
             </section>
         </main>
     </div>
@@ -211,8 +221,11 @@
         </div>
     </div>
 
-    <!-- CRÉDITO DESARROLLADOR EN LA ESQUINA INFERIOR IZQUIERDA -->
-    <div class="credito-desarrollador">Desarrollado por Emanuel Valdés Operador Sala</div>
+    <!-- CRÉDITO DESARROLLADOR FIJO -->
+    <div class="credito-desarrollador">
+        <em>Desarrollado por Emanuel Valdés Operador Sala</em><br>
+        <em>Cc: Matias Sepúlveda</em>
+    </div>
 
     <script src="script.js"></script>
 </body>
