@@ -1173,7 +1173,7 @@ const modulosData = {
 
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; align-items: start;">
                             <div style="text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; background: #f8fafc;">
-                                <img src="formulario1.png" alt="Formulario FOOD SAFETY R-21" style="max-width: 100%; height: auto; border-radius: 6px;">
+                                <img src="Formulario1.png" alt="Formulario FOOD SAFETY R-21" style="max-width: 100%; height: auto; border-radius: 6px;">
                             </div>
                             <div>
                                 <h4 style="margin: 0 0 10px 0; color: #0284c7;">Registro de Refresh y Descongelamiento</h4>
