@@ -394,7 +394,7 @@ const modulosData = {
                                 <h3>Acceso al Menú Principal</h3>
                                 <p>Ingresar al sistema SMART y dirigirse a la opción <strong>Terminal Portátil</strong>.</p>
                             </div>
-                            <div class="contenedor-img-paso"><img src="smar.png" alt="Terminal Portátil"></div>
+                            <div class="contenedor-img-paso"><img src="cap.png" alt="Terminal Portátil"></div>
                         </div>
 
                         <div class="tarjeta-paso">
@@ -403,7 +403,7 @@ const modulosData = {
                                 <h3>Procesos d'Depósito</h3>
                                 <p>En el submenú de Terminal Portátil, seleccionar <strong>Procesos d'Depósito</strong>.</p>
                             </div>
-                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 190750.png" alt="Procesos Depósito"></div>
+                            <div class="contenedor-img-paso"><img src="cap0.png" alt="Procesos Depósito"></div>
                         </div>
 
                         <div class="tarjeta-paso">
@@ -412,7 +412,7 @@ const modulosData = {
                                 <h3>Registra Mercadería</h3>
                                 <p>Dentro de Procesos de Depósito, presionar sobre <strong>Registra Mercadería</strong>.</p>
                             </div>
-                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 190822.png" alt="Registra Mercadería"></div>
+                            <div class="contenedor-img-paso"><img src="cap1.png" alt="Registra Mercadería"></div>
                         </div>
 
                         <div class="tarjeta-paso">
@@ -421,7 +421,7 @@ const modulosData = {
                                 <h3>Selección de División y Navegación a RCL</h3>
                                 <p>Ingresar el número de División a devolver (Ejemplo: <strong>Div 28</strong> para envases de bebida). Luego presionar <strong>ENTER</strong> hasta posicionarse en la casilla <strong>RCL</strong> (Reclamo).</p>
                             </div>
-                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 191000.png" alt="División 28 RCL"></div>
+                            <div class="contenedor-img-paso"><img src="cap3.png" alt="División 28 RCL"></div>
                         </div>
 
                         <div class="tarjeta-paso">
@@ -431,8 +431,8 @@ const modulosData = {
                                 <p>Seleccionar la opción <strong>2 = Salida</strong> y posteriormente presionar el número <strong>4 = Rclam Mcía</strong>.</p>
                             </div>
                             <div class="contenedor-img-paso grupo-imagenes">
-                                <img src="Captura de pantalla 2026-10-05 191057.jpg" alt="Salida">
-                                <img src="Captura de pantalla 2026-10-05 191144.jpg" alt="Rclam Mcía">
+                                <img src="cap3.png" alt="Salida">
+                                <img src="cap5.png" alt="Rclam Mcía">
                             </div>
                         </div>
 
@@ -443,8 +443,8 @@ const modulosData = {
                                 <p>Seleccionar el número <strong>1 = Defectos</strong>. Cuando aparezca el número de reclamo generado, presionar la tecla <strong>F9</strong> para habilitar el ingreso de items.</p>
                             </div>
                             <div class="contenedor-img-paso grupo-imagenes">
-                                <img src="Captura de pantalla 2026-10-05 191221.jpg" alt="Defectos">
-                                <img src="Captura de pantalla 2026-10-05 191258.jpg" alt="F9 Ingr Item">
+                                <img src="cap4.png" alt="Defectos">
+                                <img src="cap6.png" alt="F9 Ingr Item">
                             </div>
                         </div>
 
@@ -454,7 +454,7 @@ const modulosData = {
                                 <h3>Pistoleo e Ingreso de Items</h3>
                                 <p>Al pistolear el item, el sistema detectará automáticamente el proveedor. Confirmar presionando <strong>"Y"</strong> dos veces. Continuar ingresando items y al finalizar presionar la tecla <strong>F5</strong>.</p>
                             </div>
-                            <div class="contenedor-img-paso"><img src="Captura de pantalla 2026-10-05 191332.png" alt="Confirmar Y"></div>
+                            <div class="contenedor-img-paso"><img src="cap7.png" alt="Confirmar Y"></div>
                         </div>
 
                         <div class="tarjeta-paso">
