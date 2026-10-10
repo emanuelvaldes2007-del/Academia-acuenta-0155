@@ -281,7 +281,7 @@ const modulosData = {
             },
             {
                 enunciado: "Al pasar por caja los productos del cliente en, ¿qué precaución principal debes tener?",
-                opciones: ["Juntar productos de limpieza y detergentes junto con productos frescos y carnes.", "Separar estrictamente los productos químicos y de limpieza de los alimentos para evitar contaminación.", "Mezclar todo al finalizar el escaneo de productos.", "Dejar los productos frágiles al borde de la caja."],
+                opciones: ["Juntar productos de limpieza y detergentes junto con productos frescos y carnes.", "Separar strictly los productos químicos y de limpieza de los alimentos para evitar contaminación.", "Mezclar todo al finalizar el escaneo de productos.", "Dejar los productos frágiles al borde de la caja."],
                 correcta: 1
             },
             {
@@ -799,9 +799,9 @@ const modulosData = {
                     <p><strong>Operación, Uso y Limpieza del Horno Dely:</strong></p>
                     <p>Revisa atentamente el siguiente video explicativo sobre el procedimiento correcto de uso y operación del horno Dely:</p>
                     
-                    <!-- REPRODUCTOR DE VIDEO LOCAL -->
+                    <!-- REPRODUCTOR DE VIDEO LOCAL CON SOPORTE MÓVIL Y PRELOAD -->
                     <div style="max-width: 100%; margin: 1rem 0; text-align: center;">
-                        <video controls style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                        <video controls playsinline preload="metadata" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
                             <source src="horno_dely.mp4" type="video/mp4">
                             Tu navegador no soporta la reproducción de video.
                         </video>
@@ -825,8 +825,9 @@ const modulosData = {
                     </ol>
 
                     <p><strong>Video Instructivo - Uso y Cambio de Rollo:</strong></p>
+                    <!-- REPRODUCTOR DE VIDEO LOCAL CON SOPORTE MÓVIL Y PRELOAD -->
                     <div style="max-width: 100%; margin: 1rem 0; text-align: center;">
-                        <video controls style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                        <video controls playsinline preload="metadata" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
                             <source src="balanza_carniceria.mp4" type="video/mp4">
                             Tu navegador no soporta la reproducción de video.
                         </video>
@@ -838,8 +839,9 @@ const modulosData = {
                 contenido: `
                     <p>Aquí mostramos el video paso a paso para arreglar la balanza:</p>
                     
+                    <!-- REPRODUCTOR DE VIDEO LOCAL CON SOPORTE MÓVIL Y PRELOAD -->
                     <div style="max-width: 100%; margin: 1rem 0; text-align: center;">
-                        <video controls style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                        <video controls playsinline preload="metadata" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
                             <source src="balanza_dely1.mp4" type="video/mp4">
                             Tu navegador no soporta la reproducción de video.
                         </video>
