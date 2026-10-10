@@ -832,6 +832,14 @@ const modulosData = {
                             Tu navegador no soporta la reproducción de video.
                         </video>
                     </div>
+
+                    <!-- ENLACE DE RESPALDO A YOUTUBE SHORT -->
+                    <div style="margin-top: 1rem; text-align: center; background: #fef2f2; border: 1px solid #fecaca; padding: 12px; border-radius: 8px;">
+                        <p style="font-size: 0.9rem; color: #b91c1c; margin-bottom: 6px; font-weight: 600;">¿Problemas para reproducir el video en la web?</p>
+                        <a href="https://www.youtube.com/shorts/S9glswmo30w" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: #ff0000; color: white; padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: bold; text-decoration: none; box-shadow: 0 2px 5px rgba(255,0,0,0.2);">
+                            ▶ Ver video directamente en YouTube (Shorts)
+                        </a>
+                    </div>
                 `
             },
             {
@@ -845,6 +853,14 @@ const modulosData = {
                             <source src="balanza_dely1.mp4" type="video/mp4">
                             Tu navegador no soporta la reproducción de video.
                         </video>
+                    </div>
+
+                    <!-- ENLACE DE RESPALDO A YOUTUBE SHORT -->
+                    <div style="margin-top: 1rem; text-align: center; background: #fef2f2; border: 1px solid #fecaca; padding: 12px; border-radius: 8px;">
+                        <p style="font-size: 0.9rem; color: #b91c1c; margin-bottom: 6px; font-weight: 600;">¿Problemas para reproducir el video en la web?</p>
+                        <a href="https://www.youtube.com/shorts/QttlYTjw7zU" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: #ff0000; color: white; padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: bold; text-decoration: none; box-shadow: 0 2px 5px rgba(255,0,0,0.2);">
+                            ▶ Ver video directamente en YouTube (Shorts)
+                        </a>
                     </div>
                 `
             }
@@ -862,7 +878,7 @@ const modulosData = {
             },
             {
                 enunciado: "Si la balanza de carnicería presenta un error de comunicación con el sistema, ¿qué se debe revisar primero?",
-                opciones: ["Que el cable de red ethernet esté bien conectado en la parte posterior.", "Cambiar la pantalla táctil.", "Llamar al chofer del camión.", "Cambiar la balanza de mesa."],
+                opciones: ["Que el cable de red ethernet esté bien conectado en la posterior.", "Cambiar la pantalla táctil.", "Llamar al chofer del camión.", "Cambiar la balanza de mesa."],
                 correcta: 0
             }
         ]
