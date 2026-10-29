@@ -486,7 +486,7 @@ const modulosData = {
                             <div class="numero-paso">8</div>
                             <div class="contenido-paso">
                                 <h3>Confirmación de Monto de Impuesto y Código Postal</h3>
-                                <p>Al presionar <strong>F5</strong> aparecerá el mensaje <em>¿Monto Impues Correct?</em>; debemos presionar la letra <strong>"Y"</strong>. Luego, presionar el número <strong>"2"</strong> (OTRO) y luego <strong>"N"</strong>.</p>
+                                <p>Al presionar <strong>F5</strong> aparecerá el mensaje <em>¿Monto Impues Correct?</em>; debemos presionar la letra <strong>"Y"</strong>. Luego, presionar el número <strong>"2"</strong> (OTRO) y luego <strong>"F5"</strong>.</p>
                             </div>
                             <div class="contenedor-img-paso grupo-imagenes">
                                 <img src="cap8.png" alt="Monto Impuesto Correcto">
@@ -498,7 +498,7 @@ const modulosData = {
                             <div class="numero-paso">9</div>
                             <div class="contenido-paso">
                                 <h3>Autorización y Cierre de Reclamo</h3>
-                                <p>Presionar <strong>"F5"</strong> para finalizar. A continuación, presionar <strong>"Y"</strong> para autorizar el proveedor y nuevamente <strong>"Y"</strong> para confirmar memo, finalizando con <strong>F5</strong>.</p>
+                                <p>Presionar <strong>"F5"</strong> para finalizar. A continuación, presionar <strong>"Y"</strong> para autorizar el proveedor y nuevamente <strong>"Y"</strong> para confirmar memo. Luego presionar <strong>"N"<strong> para ir finalizando y finalmente presionar <strong>"F5"<strong> para pasar a la siguiente etapa.
                             </div>
                             <div class="contenedor-img-paso grupo-imagenes">
                                 <img src="cap10.png" alt="Confirmar F5">
