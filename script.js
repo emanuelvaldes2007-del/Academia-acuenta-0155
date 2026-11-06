@@ -37,7 +37,7 @@ function cambiarUsuario() {
 }
 
 function actualizarProgresoGlobal() {
-    const total = 11; // Actualizado a 11 módulos
+    const total = 12; // Actualizado a 12 módulos
     const completados = modulosCompletados.length;
     const porcentaje = Math.round((completados / total) * 100);
 
@@ -329,7 +329,7 @@ const modulosData = {
                 correcta: 0
             },
             {
-                enunciado: "Si durante la llamada por un quiebre el cliente rechaza la opción de producto sustituto ofrecida, ¿qué debes hacer?",
+                enunciado: "Si durante la llamada por un quiebre el cliente rechaza la opción de producto sustituto offered, ¿qué debes hacer?",
                 opciones: ["Agregar el producto sustituto de todas formas.", "Remover el producto del pedido en la aplicación respetando la decisión del cliente.", "Cancelar la orden completa en Instaleap.", "Cobrar el producto aunque no se lo entregues."],
                 correcta: 1
             }
@@ -498,7 +498,7 @@ const modulosData = {
                             <div class="numero-paso">9</div>
                             <div class="contenido-paso">
                                 <h3>Autorización y Cierre de Reclamo</h3>
-                                <p>Presionar <strong>"F5"</strong> para finalizar. A continuación, presionar <strong>"Y"</strong> para autorizar el proveedor y nuevamente <strong>"Y"</strong> para confirmar memo. Luego presionar <strong>"N"<strong> para ir finalizando y finalmente presionar <strong>"F5"<strong> para pasar a la siguiente etapa.
+                                <p>Presionar <strong>"F5"</strong> para finalizar. A continuación, presionar <strong>"Y"</strong> para autorizar el proveedor y nuevamente <strong>"Y"</strong> para confirmar memo. Luego presionar <strong>"N"</strong> para ir finalizando y finalmente presionar <strong>"F5"</strong> para pasar a la siguiente etapa.</p>
                             </div>
                             <div class="contenedor-img-paso grupo-imagenes">
                                 <img src="cap10.png" alt="Confirmar F5">
@@ -576,7 +576,7 @@ const modulosData = {
 
                         <div class="tarjeta-paso">
                             <div class="numero-paso">2</div>
-                            <div class="contenido-paso"><h3>Selección de Recepción Directa</h3><p>En el menú principal de la App Recibo, presionar la opción <strong>Comenzar Recepción </strong>.</p></div>
+                            <div class="contenido-paso"><h3>Selección de Recepción Directa</h3><p>En el menú principal de la App Recibo, presionar la opción <strong>Comenzar Recepción</strong>.</p></div>
                             <div class="contenedor-img-paso"><img src="IMG_1373.jpeg" alt="Comenzar Recepción"></div>
                         </div>
 
@@ -1313,6 +1313,127 @@ const modulosData = {
                     "Guía de Recepción Directa"
                 ],
                 correcta: 0
+            }
+        ]
+    },
+    12: {
+        titulo: "Módulo 12: Trazabilidad Digital",
+        etapas: [
+            {
+                subtitulo: "Ingreso a Me@Walmart y Sección Disponibilidad",
+                contenido: `
+                    <p>Sigue los primeros pasos operativos en la terminal ZEBRA para ingresar al módulo de Trazabilidad Digital:</p>
+                    <div class="flujo-pasos">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso">
+                                <h3>Ingresar a la App Me@Walmart</h3>
+                                <p>Abre e inicia sesión en la aplicación <strong>Me@Walmart</strong> desde tu terminal de Radio Frecuencia (Pistola Zebra).</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso">
+                                <h3>Menú Principal</h3>
+                                <p>Dirígete a las <strong>3 rayas (menú hamburguesa)</strong> ubicadas en la esquina superior izquierda de la pantalla.</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso">
+                                <h3>Sección Disponibilidad</h3>
+                                <p>En el menú desplegable, selecciona e ingresa a la casilla de <strong>Disponibilidad</strong> (icono de la caja).</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="trazabi.png" alt="Ingreso a Disponibilidad en Me@Walmart" onerror="this.onerror=null; this.src='trazabi.jpg';">
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso">
+                                <h3>Seleccionar Trazabilidad</h3>
+                                <p>Dentro de las opciones de Disponibilidad, presiona sobre <strong>Trazabilidad</strong>.</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="traza.png" alt="Selección de Trazabilidad" onerror="this.onerror=null; this.src='traza.jpg';">
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">5</div>
+                            <div class="contenido-paso">
+                                <h3>Nueva Trazabilidad</h3>
+                                <p>En la pantalla de Productos en descongelación y cocción, presiona el botón azul <strong>Nueva trazabilidad</strong>.</p>
+                            </div>
+                            <div class="contenedor-img-paso">
+                                <img src="nuevatra.png" alt="Presionar Nueva Trazabilidad" onerror="this.onerror=null; this.src='nuevatra.jpg';">
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                subtitulo: "Paso a Paso del Registro de Producto trazado",
+                contenido: `
+                    <p>Secuencia completa para el escaneo, ingreso de datos, fotografía de etiqueta y confirmación final:</p>
+                    <div style="text-align: center; margin: 1rem 0;">
+                        <img src="pasostra.png" alt="Flujo general de Trazabilidad Digital" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    </div>
+
+                    <div class="flujo-pasos" style="margin-top: 1.5rem;">
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso">
+                                <h3>Identificar producto</h3>
+                                <p>Escanea el fleje, código de barras del producto con el lector de la Zebra o ingresa el número de ítem manualmente para comenzar.</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso">
+                                <h3>Datos del producto</h3>
+                                <p>Ingresa la <strong>Unidad de medida</strong> (ejemplo: Kilos / Unidades), la <strong>Cantidad</strong> exacta trazada y la <strong>Fecha de vencimiento</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso">
+                                <h3>Foto de etiqueta</h3>
+                                <p>Toma una fotografía clara y nítida de la etiqueta original del empaque, asegurándote de que el <strong>lote</strong> y la <strong>fecha de vencimiento</strong> sean totalmente legibles.</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-paso">
+                            <div class="numero-paso">4</div>
+                            <div class="contenido-paso">
+                                <h3>Registrar y Finalizar</h3>
+                                <p>Presiona <strong>"Registrar Trazabilidad"</strong>. Al finalizar la confirmación del sistema, presiona <em>"Registrar otro producto"</em> si vas a continuar trazando o <em>"Finalizar"</em> para cerrar el proceso.</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        ],
+        preguntas: [
+            {
+                enunciado: "¿En qué menú de la aplicación Me@Walmart se encuentra ubicada la opción de Trazabilidad?",
+                opciones: ["Indicadores de Tienda", "Disponibilidad", "Mis Tareas", "Configuración"],
+                correcta: 1
+            },
+            {
+                enunciado: "¿Qué datos son obligatorios de verificar e ingresar en la pantalla 'Datos del producto'?",
+                opciones: ["Precio normal y precio de oferta.", "Unidad de medida, cantidad y fecha de vencimiento.", "Nombre del supervisor y número de pasillo.", "Patente del camión de transporte."],
+                correcta: 1
+            },
+            {
+                enunciado: "¿Qué elementos deben ser claramente visibles en la fotografía de la etiqueta tomada desde la Zebra?",
+                opciones: ["La cara del colaborador.", "El código de la caja registradora.", "El número de lote y la fecha de vencimiento del producto.", "El logo de la tienda únicamente."],
+                correcta: 2
             }
         ]
     }
