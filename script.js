@@ -637,7 +637,7 @@ const modulosData = {
 
                         <div class="tarjeta-paso">
                             <div class="numero-paso">2</div>
-                            <div class="contenido-paso"><h3>Desplegar Menú Principal</h3><p>Presionar las <strong>3 líneas</strong> (menú hamburguesa) ubicadas en la esquina superior izquierda de la pantalla.</p></div>
+                            <div class="contenido-paso"><h3>Desplegar Menú Principal</h3><p>Presionar las <strong>3 líneas</strong> ubicadas en la esquina superior izquierda de la pantalla.</p></div>
                             <div class="contenedor-img-paso"><img src="mod1.png" alt="Piso de Venta Menú"></div>
                         </div>
 
