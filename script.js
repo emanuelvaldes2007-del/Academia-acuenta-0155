@@ -1336,7 +1336,7 @@ const modulosData = {
                             <div class="numero-paso">2</div>
                             <div class="contenido-paso">
                                 <h3>Menú Principal</h3>
-                                <p>Dirígete a las <strong>3 rayas (menú hamburguesa)</strong> ubicadas en la esquina superior izquierda de la pantalla.</p>
+                                <p>Dirígete a las <strong>3 rayas </strong> ubicadas en la esquina superior izquierda de la pantalla.</p>
                             </div>
                         </div>
 
